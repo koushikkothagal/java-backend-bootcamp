@@ -38,8 +38,6 @@ In summary, the front end is responsible for the user interface, and how user in
 
 The front end and back end communicate with each other using a variety of techniques, such as HTTP requests and responses. When a user interacts with a front-end feature of the website, such as a form submission, it sends an HTTP request to the server, the back-end, which then processes the data, interacts with the database if needed, and sends a response back to the front-end to be displayed to the user.
 
-
-
 ## How a web request works
 
 When a JavaScript client application makes an HTTP request to a Java back-end service, the following steps occur:

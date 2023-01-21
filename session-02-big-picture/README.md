@@ -81,9 +81,27 @@ Steps to get PostgresDB installed locally
 Possibly prerecorded videos. Need offline support
 
 # Git and GitHub
-TODO
-Steps to get Git installed
-Possibly prerecorded videos. Need offline support
+1. Go to download page using the following link
+
+   ```https://git-scm.com/downloads```
+
+2. Click on Windows to download for windows
+   ![](assets/download_page_1.png)
+3. Upon on clicking on it, you will be navigated to the following page, click 'Click here to download' and Git bash will be downloaded.
+   ![](assets/download_page_2.png)
+4. Now, double-click on downloaded exe file. You will be prompted to select Yes or No, select Yes.
+5. Installation window will open, click on Next and you will be asked to choose installation directory, choose it and click on next.
+   ![](assets/install_window_1.png)
+   ![](assets/install_window_2.png)
+6. For the next upcoming screens just choose the default options and click next and wait for the installation to complete.
+7. After the installation is finished, click on Finish.
+8. To verify if git was properly installed, open terminal/command prompt/git bash and type
+
+   ```git --version```
+9. You should see something like this.
+   ![](assets/git_install_verify.png)
+10. Now that git is successfully installed, go ahead and clone this repository by typing the following command in the terminal  
+    ```git clone https://github.com/koushikkothagal/java-backend-bootcamp.git```
 
 # Setting up IntelliJ
 TODO

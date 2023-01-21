@@ -1,6 +1,5 @@
 # Java Brains Java backend bootcamp
 
-
 ## Resources
 
 - Watch the YouTube playlist (TODO)
@@ -11,15 +10,15 @@
 - Frequently Asked Questions
 - About the instructor
 
-
 ## Bootcamp syllabus
+
 Note: This is work in progress. The final curriculum could vary significantly
 
 - [Session 01: Kickoff & Prerequisites](session-01-kickoff-prerequisites)
 - [Session 02: The Big Picture](session-02-big-picture)
 - [Session 03: Java Basics](session-03-java-basics)
 - [Session 04: Java Collections](session-04-java-collections)
-- [Session 05: Unit testing](session-05-unit-testing)
+- [Session 05: Advanced Java](session-05-advanced-java)
 - [Session 06: Maven](session-06-maven)
 - [Session 07: Live project 1 (Core Java)](session-07-project-1)
 - [Session 08: Relational Databases and SQL](session-08-relational-databases-and-sql)
@@ -40,6 +39,5 @@ Note: This is work in progress. The final curriculum could vary significantly
 - [Session 23: Conclusion](session-23-conclusion)
 
 ## About this bootcamp
+
 TODO
-
-

@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'The Java Brains Bootcamp',
   tagline: 'Java backend mastery: Your ticket to a successful career',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://koushikkothagal.github.io/java-backend-bootcamp',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

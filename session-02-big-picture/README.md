@@ -81,9 +81,10 @@ Steps to get PostgresDB installed locally
 Possibly prerecorded videos. Need offline support
 
 # Git and GitHub
+### On windows
 1. Go to download page using the following link
 
-   ```https://git-scm.com/downloads```
+   [https://git-scm.com/downloads](https://git-scm.com/downloads)
 
 2. Click on Windows to download for windows
    ![](assets/download_page_1.png)
@@ -100,8 +101,23 @@ Possibly prerecorded videos. Need offline support
    ```git --version```
 9. You should see something like this.
    ![](assets/git_install_verify.png)
-10. Now that git is successfully installed, go ahead and clone this repository by typing the following command in the terminal  
-    ```git clone https://github.com/koushikkothagal/java-backend-bootcamp.git```
+    ### Post Install
+10. Now that git is successfully installed, there are a couple of things that needs to be done.
+    1. First, configure your username and email since every git commit uses this information, type the following commands in terminal
+
+                git config --global user.name "Vijaysai"
+                git config --gloabl user.email "vijaysai@example.com"
+    2. To verify if your username and email were properly set use the following command
+    
+        ```git config user.name``` 
+    
+        ```git config user.email``` 
+       
+       You should see the email and name that you have set earlier, if not run the commands in step 10.1 again.
+    4. Now clone the repository using the following command 
+       
+       ```git clone https://github.com/koushikkothagal/java-backend-bootcamp.git```
+    
 
 # Setting up IntelliJ
 TODO

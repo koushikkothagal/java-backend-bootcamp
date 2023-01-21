@@ -51,7 +51,7 @@ Anonymous Inner class: a class without a name defined inside a method
 Lambda Expression: a functional interface defined inside a method
 Let's see each of them in detail with an example:
 
-## Member Inner class:
+## Member Inner class
 
 ```java
 class Outer {
@@ -72,7 +72,7 @@ Outer.Inner inner = outer.new Inner();
 inner.display(); // prints "Outer x: 10"
 ```
 
-## Local Inner class:
+## Local Inner class
 
 ```java
 class Outer {
@@ -91,7 +91,7 @@ class Outer {
 
 Here, `Inner` is the local inner class. We can only create the instance of `Inner` class inside the doSomething method
 
-## Anonymous Inner class:
+## Anonymous Inner class
 
 ```java
 class Outer {
@@ -108,7 +108,7 @@ class Outer {
 
 Here, `Inner` is an anonymous inner class, as it doesn't have a name. Anonymous inner class is defined and instantiated in a single step. Anonymous inner class is used when we need to use a class only once.
 
-## Lambda Expression:
+## Lambda Expression
 
 ```java
 interface MyFunction {

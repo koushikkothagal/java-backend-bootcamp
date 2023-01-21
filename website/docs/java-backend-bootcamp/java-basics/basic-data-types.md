@@ -27,6 +27,7 @@ Primitive data types are the most basic data types in Java. They include:
 8. boolean: The boolean data type can only store two values: true or false. It is used to represent true/false conditions.
 
 ## Non-Primitive Data Types
+
 Non-primitive data types are also known as reference data types. They include:
 
 1. String: A string is a sequence of characters. The String class is used to create and manipulate strings.

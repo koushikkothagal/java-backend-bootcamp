@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 ---
+
 # Arrays in Java
 
 An array is a data structure that holds a fixed number of values of the same type. These values can be accessed by their index, which is an integer value that ranges from 0 to the size of the array minus 1. In Java, arrays are objects and are created with the `new` keyword.
@@ -54,6 +55,7 @@ for (int i = 0; i < myArray.length; i++) {
 This uses a `for` loop to iterate through each element in the `myArray` array and prints out its value. The `myArray.length` property returns the length of the array.
 
 ## Multi-dimensional Arrays
+
 Java also supports multi-dimensional arrays, also known as arrays of arrays. These can be declared and initialized as follows:
 
 ```java

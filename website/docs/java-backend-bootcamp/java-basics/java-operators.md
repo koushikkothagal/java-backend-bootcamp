@@ -7,6 +7,7 @@ sidebar_position: 2
 Java has a variety of operators that can be used to perform operations on variables and values. These operators can be grouped into three main categories:
 
 ## Arithmetic Operators
+
 These operators are used to perform mathematical operations on numeric values. The basic arithmetic operators include:
 
 - Addition (`+`)
@@ -29,6 +30,7 @@ y--; // y is now 9
 ```
 
 ## Relational Operators
+
 These operators are used to compare values and determine their relationship. The relational operators include:
 
 - Equal to (`==`)
@@ -48,6 +50,7 @@ boolean isGreater = x > y; // isGreater is false
 ```
 
 ## Logical Operators
+
 These operators are used to combine multiple relational expressions and determine the logic between them. The logical operators include:
 
 - Logical AND (`&&`)

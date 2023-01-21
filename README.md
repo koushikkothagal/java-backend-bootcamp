@@ -5,8 +5,8 @@
 - Watch the YouTube playlist (TODO)
 - About this bootcamp
 - [Join the Java Brains Discord server](https://discord.gg/GgPFXqtaUe)
-- Ask a question
-- Participate in discussions
+- [Ask a question](https://github.com/koushikkothagal/java-backend-bootcamp/discussions/categories/sessions-q-a)
+- [Participate in discussions](https://github.com/koushikkothagal/java-backend-bootcamp/discussions)
 - Frequently Asked Questions
 - About the instructor
 

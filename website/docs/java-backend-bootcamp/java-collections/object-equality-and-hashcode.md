@@ -206,5 +206,3 @@ System.out.println(map); // {Point(1, 2)=B}`
 ```
 
 Here, the two `Point` objects are considered equal according to the `equals()` method, and the second key-value pair overwrites the first one.
-
-In conclusion, the behavior of equality can have a significant impact on different types of collections. For lists, it determines whether duplicate elements are allowed. For sets, it determines whether duplicate elements are removed. For maps, it determines whether existing key-value pairs are updated or not. Understanding how equality affects collections is important for designing and implementing efficient and correct code.

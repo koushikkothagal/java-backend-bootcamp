@@ -82,6 +82,7 @@ Possibly prerecorded videos. Need offline support
 
 # Git and GitHub
 ### On windows
+## On Windows
 1. Go to download page using the following link
 
    [https://git-scm.com/downloads](https://git-scm.com/downloads)

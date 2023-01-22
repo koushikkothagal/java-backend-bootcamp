@@ -81,9 +81,44 @@ Steps to get PostgresDB installed locally
 Possibly prerecorded videos. Need offline support
 
 # Git and GitHub
-TODO
-Steps to get Git installed
-Possibly prerecorded videos. Need offline support
+### On windows
+## On Windows
+1. Go to download page using the following link
+
+   [https://git-scm.com/downloads](https://git-scm.com/downloads)
+
+2. Click on Windows to download for windows
+   ![](assets/download_page_1.png)
+3. Upon on clicking on it, you will be navigated to the following page, click 'Click here to download' and Git bash will be downloaded.
+   ![](assets/download_page_2.png)
+4. Now, double-click on downloaded exe file. You will be prompted to select Yes or No, select Yes.
+5. Installation window will open, click on Next and you will be asked to choose installation directory, choose it and click on next.
+   ![](assets/install_window_1.png)
+   ![](assets/install_window_2.png)
+6. For the next upcoming screens just choose the default options and click next and wait for the installation to complete.
+7. After the installation is finished, click on Finish.
+8. To verify if git was properly installed, open terminal/command prompt/git bash and type
+
+   ```git --version```
+9. You should see something like this.
+   ![](assets/git_install_verify.png)
+    ### Post Install
+10. Now that git is successfully installed, there are a couple of things that needs to be done.
+    1. First, configure your username and email since every git commit uses this information, type the following commands in terminal
+
+                git config --global user.name "Vijaysai"
+                git config --gloabl user.email "vijaysai@example.com"
+    2. To verify if your username and email were properly set use the following command
+    
+        ```git config user.name``` 
+    
+        ```git config user.email``` 
+       
+       You should see the email and name that you have set earlier, if not run the commands in step 10.1 again.
+    4. Now clone the repository using the following command 
+       
+       ```git clone https://github.com/koushikkothagal/java-backend-bootcamp.git```
+    
 
 # Setting up IntelliJ
 TODO

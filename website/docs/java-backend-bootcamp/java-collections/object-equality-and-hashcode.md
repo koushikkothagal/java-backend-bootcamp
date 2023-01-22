@@ -1,7 +1,3 @@
----
-sidebar_position: 3
----
-
 # Object equality and hashcode
 
 ## Object equality

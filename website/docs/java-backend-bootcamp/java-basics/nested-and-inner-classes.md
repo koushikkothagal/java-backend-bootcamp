@@ -1,7 +1,3 @@
----
-sidebar_position: 6
----
-
 # Nested and Inner Classes in Java
 
 In Java, a class can be defined inside another class, which is known as a nested class. There are two types of nested classes in Java: static nested classes and inner classes.

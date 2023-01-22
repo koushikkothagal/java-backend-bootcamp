@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Java Basic Data Types
 
 Java has two types of data types: primitive and non-primitive.

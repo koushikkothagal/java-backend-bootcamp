@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Introduction to Collections
 
 The Java Collections framework is a set of classes and interfaces that provide a consistent and efficient way to manage collections of data. The main purpose of the framework is to provide a standard way of representing and manipulating collections of objects in Java. The framework is implemented in the `java.util` package and includes several interfaces and classes that can be used to create and manipulate collections of data.

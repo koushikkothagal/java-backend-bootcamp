@@ -1,7 +1,3 @@
----
-sidebar_position: 4
----
-
 # Classes
 
 A class in Java is a blueprint for creating objects, which are instances of the class. A class defines the properties and methods that an object of that class will have. In other words, a class is a template for creating objects, and an object is an instance of a class.

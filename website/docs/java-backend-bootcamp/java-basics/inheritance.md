@@ -1,7 +1,3 @@
----
-sidebar_position: 5
----
-
 # Inheritance
 
 Inheritance is one of the key concepts in object-oriented programming. Inheritance allows a class to inherit properties and methods from another class, which helps to reduce code duplication and improves code reusability.

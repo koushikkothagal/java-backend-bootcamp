@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 # Generalization with Interfaces
 
 In Object Oriented Programming, interfaces are a way to define a contract for a group of related classes. An interface defines a set of method signatures, but does not provide an implementation for those methods. Classes that implement the interface must provide an implementation for all of the methods defined in the interface.

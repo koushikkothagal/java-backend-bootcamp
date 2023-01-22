@@ -1,7 +1,3 @@
----
-sidebar_position: 6
----
-
 # Comparable and Comparator
 
 In Java, `Comparable` and `Comparator` are two interfaces that are used to sort collections of objects.

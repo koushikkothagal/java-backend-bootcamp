@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 # Java Operators
 
 Java has a variety of operators that can be used to perform operations on variables and values. These operators can be grouped into three main categories:

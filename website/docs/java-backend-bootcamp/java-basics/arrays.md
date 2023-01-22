@@ -1,7 +1,3 @@
----
-sidebar_position: 3
----
-
 # Arrays in Java
 
 An array is a data structure that holds a fixed number of values of the same type. These values can be accessed by their index, which is an integer value that ranges from 0 to the size of the array minus 1. In Java, arrays are objects and are created with the `new` keyword.

@@ -1,7 +1,3 @@
----
-sidebar_position: 4
----
-
 # Time Complexity and Big O
 
 ## Introduction to Time Complexity

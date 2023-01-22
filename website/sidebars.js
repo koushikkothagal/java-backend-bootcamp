@@ -50,10 +50,24 @@ const sidebars = {
         'java-backend-bootcamp/java-collections/the-list-interface',
         'java-backend-bootcamp/java-collections/comparable-and-comparator',
         'java-backend-bootcamp/java-collections/the-set-interface',
-        'java-backend-bootcamp/java-collections/the-map.interface',
+        'java-backend-bootcamp/java-collections/the-map-interface',
       ],
     },
-    'java-backend-bootcamp/exceptions'
+    {
+      type: 'category',
+      label: 'Java Lambdas and Streams',
+      link: {
+        type: 'generated-index',
+        title: 'Java Lambdas and Streams',
+        slug: '/lambdas-and-streams'
+      },
+      items: [
+        'java-backend-bootcamp/lambdas-and-streams/functional-programming',
+        'java-backend-bootcamp/lambdas-and-streams/lambda-expressions',
+        'java-backend-bootcamp/lambdas-and-streams/custom-interfaces',
+        'java-backend-bootcamp/lambdas-and-streams/best-practices',
+      ],
+    },
   ]
 };
 

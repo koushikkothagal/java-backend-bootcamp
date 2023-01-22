@@ -67,6 +67,7 @@ const sidebars = {
         'java-backend-bootcamp/lambdas-and-streams/custom-interfaces',
         'java-backend-bootcamp/lambdas-and-streams/best-practices',
         'java-backend-bootcamp/lambdas-and-streams/advanced-concepts',
+        'java-backend-bootcamp/lambdas-and-streams/java-streams',
       ],
     },
   ]

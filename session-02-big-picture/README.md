@@ -69,32 +69,42 @@ Explain dev workflow
 # Setting up Java
 ## On Windows
 Below steps can be used to setup OpenJDK 19 (latest stable GA version) on your Windows PC.
-###Downloaing Java
+### Downloaing Java
 1.	Open https://jdk.java.net/19/ in your web browser.
 2.	Click in ‘zip’ hyperlink against Windows/ x64 as highlighted in image below:
 ![](assets/java_setup_win/01openjdk-download.png)
 3.	This shall start with download of openjdk.
 4.	Create a new folder in C:\ of computer called openjdk.
-    Use below steps to create the folder:
-    a.	Open ‘Run’ prompt by clicking Windows + r key on your keyboard.
-    b.	Type ‘C:\’ in textbox and click ‘OK’ button.
-    ![](assets/java_setup_win/02run-c-drive.png)
-    c.	This will open file browser in at c:\ location.
-    d.	Right click on free space and navigate to new option and click on 'Folder' option.
-    ![](assets/java_setup_win/03create-folder.png)
-    e.	This will create a New Folder. Type and ‘open-jdk’ and press ‘Enter’ key.
-    ![](assets/java_setup_win/04openjdk-folder.png)
+Use below steps to create the folder:
+a.	Open ‘Run’ prompt by clicking Windows + r key on your keyboard.
+b.	Type ‘C:\’ in textbox and click ‘OK’ button.
+
+![](assets/java_setup_win/02run-c-drive.png)
+
+c.	This will open file browser in at c:\ location.
+
+d.	Right click on free space and navigate to new option and click on 'Folder' option.
+
+![](assets/java_setup_win/03create-folder.png)
+
+e.	This will create a New Folder. Type and ‘open-jdk’ and press ‘Enter’ key.
+![](assets/java_setup_win/04openjdk-folder.png)
+
 5.	Copy the downloaded zip file (from step 3) into Java folder and unzip it.
-    Use below steps to unzip the file.
-    a.	Navigate to folder c:\openjdk and open the pasted zip file.
-    ![](assets/java_setup_win/05copy-zip.png)
-    b.	Select all the folder (usually shall contain only a single jdk folder) with-in the zip (press ctrl + a) and copy (press ctrl + c) to clipboard.
-    c.	Navigate back to c:\openjdk and paste the copied folder (press ctrl + v)
-    ![](assets/java_setup_win/06extract-zip.png)
-    d.	Navigate to the pasted folder (jdk-19.0.2) and make a note of absolute path.
-        Absolute path in image above will be “C:\openjdk\jdk-19.0.2”. If your folder name is different, make the changes accordingly.
-        
-###Setting up Java in PATH variable and JAVA_HOME variable.
+Use below steps to unzip the file.
+a.	Navigate to folder c:\openjdk and open the pasted zip file.
+
+![](assets/java_setup_win/05copy-zip.png)
+
+b.	Select all the folder (usually shall contain only a single jdk folder) with-in the zip (press ctrl + a) and copy (press ctrl + c) to clipboard.
+c.	Navigate back to c:\openjdk and paste the copied folder (press ctrl + v)
+
+![](assets/java_setup_win/06extract-zip.png)
+
+d.	Navigate to the pasted folder (jdk-19.0.2) and make a note of absolute path.
+Absolute path in image above will be “C:\openjdk\jdk-19.0.2”. If your folder name is different, make the changes accordingly.
+       
+### Setting up Java in PATH variable and JAVA_HOME variable.
 Java should be set in PATH variable so that it is available to all the programs easily without needing the absolute path of java program.
 JAVA_HOME variable is used by many java programs and it is advised to setup same.
 Steps to setup:
@@ -126,7 +136,7 @@ Note: Variable value should be same as what has been noted down in step 5 – d 
 ![](assets/java_setup_win/17java-path-top.png)
 12.	Continue to click on ‘OK’ buttons to close the Windows opened.
 
-###Verifying Java setup:
+### Verifying Java setup:
 After performing all the steps above, open jdk should be setup on your computer. Perform below steps to check if the jdk is correctly setup.
 1.	Press windows + r button to open ‘Run’ window and type cmd in text box.
 ![](assets/java_setup_win/18run-cmd.png)

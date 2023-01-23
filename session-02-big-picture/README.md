@@ -67,6 +67,84 @@ Explain dev workflow
 - Deploy to cloud (TBD)
 
 # Setting up Java
+## On Windows
+Below steps can be used to setup OpenJDK 19 (latest stable GA version) on your Windows PC.
+###Downloaing Java
+1.	Open https://jdk.java.net/19/ in your web browser.
+2.	Click in ‘zip’ hyperlink against Windows/ x64 as highlighted in image below:
+![](assets/java_setup_win/01openjdk-download.png)
+3.	This shall start with download of openjdk.
+4.	Create a new folder in C:\ of computer called openjdk.
+    Use below steps to create the folder:
+    a.	Open ‘Run’ prompt by clicking Windows + r key on your keyboard.
+    b.	Type ‘C:\’ in textbox and click ‘OK’ button.
+    ![](assets/java_setup_win/02run-c-drive.png)
+    c.	This will open file browser in at c:\ location.
+    d.	Right click on free space and navigate to new option and click on 'Folder' option.
+    ![](assets/java_setup_win/03create-folder.png)
+    e.	This will create a New Folder. Type and ‘open-jdk’ and press ‘Enter’ key.
+    ![](assets/java_setup_win/04openjdk-folder.png)
+5.	Copy the downloaded zip file (from step 3) into Java folder and unzip it.
+    Use below steps to unzip the file.
+    a.	Navigate to folder c:\openjdk and open the pasted zip file.
+    ![](assets/java_setup_win/05copy-zip.png)
+    b.	Select all the folder (usually shall contain only a single jdk folder) with-in the zip (press ctrl + a) and copy (press ctrl + c) to clipboard.
+    c.	Navigate back to c:\openjdk and paste the copied folder (press ctrl + v)
+    ![](assets/java_setup_win/06extract-zip.png)
+    d.	Navigate to the pasted folder (jdk-19.0.2) and make a note of absolute path.
+        Absolute path in image above will be “C:\openjdk\jdk-19.0.2”. If your folder name is different, make the changes accordingly.
+        
+###Setting up Java in PATH variable and JAVA_HOME variable.
+Java should be set in PATH variable so that it is available to all the programs easily without needing the absolute path of java program.
+JAVA_HOME variable is used by many java programs and it is advised to setup same.
+Steps to setup:
+1.	Press Windows + r key to open ‘Run’ window and type in sysdm.cpl.
+![](assets/java_setup_win/07system-prop.png)
+2.	Press ‘OK’ button to open System Properties.
+![](assets/java_setup_win/08sys_prop-home.png)
+3.	Navigate to ‘Advanced’ tab as highlighted in image above and click in ‘Environment Variables’ button as shown in image below.
+![](assets/java_setup_win/09sys-prop-adv.png)
+4.	Under the ‘System Variables’ section, click on 'New' button as highlighted below.
+![](assets/java_setup_win/10env-var.png)
+5.	This will open a window that will allow you to setup system variable.
+![](assets/java_setup_win/11new-var.png)
+6.	Enter the below values in the corresponding fields and click on ‘OK’ button.
+Variable name: JAVA_HOME
+Variable value: C:\openjdk\jdk-19.0.2
+Note: Variable value should be same as what has been noted down in step 5 – d of Downloading Java section.
+![](assets/java_setup_win/12new-var-fill.png)
+7.	A new entry should be created as shown in image below:
+![](assets/java_setup_win/13java_home_set.png)
+8.	Select the row having variable name as ‘Path’ and click on edit button.
+![](assets/java_setup_win/14path-edit.png)
+9.	Click on ‘New’ button as shown below.
+![](assets/java_setup_win/15path-new.png)
+10.	Enter below text in newly added row as show in image below.
+%JAVA_HOME%\bin
+![](assets/java_setup_win/16java-path-set.png)
+11.	Select the newly added row and continue to click on ‘Move Up’ button as highlighted below until the newly added row is on the top.
+![](assets/java_setup_win/17java-path-top.png)
+12.	Continue to click on ‘OK’ buttons to close the Windows opened.
+
+###Verifying Java setup:
+After performing all the steps above, open jdk should be setup on your computer. Perform below steps to check if the jdk is correctly setup.
+1.	Press windows + r button to open ‘Run’ window and type cmd in text box.
+![](assets/java_setup_win/18run-cmd.png)
+2.	Click on ‘OK’ button to open command prompt.
+Note: Any existing opened command prompt will not give you correct results. You need to open a new instance of command prompt.
+3.	Run the below commands to check to Java is correctly set.
+echo %JAVA_HOME%
+java -version
+javac -version
+You should get an output similar to what has been shown in image below.
+![](assets/java_setup_win/19java-verify.png)
+
+## On Linux
+TODO
+
+## On Mac
+TODO
+
 TODO
 Steps to get Java installed 
     - OpenJDK option

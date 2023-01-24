@@ -136,9 +136,11 @@ Possibly prerecorded videos. Need offline support
 ![](assets/intelliJMacOS/intelliJ_03.png)
 
 5. When you click on the IntelliJ IDEA CE icon, you may be prompted with a query asking if you want to open it. Click on Open to open IntelliJ IDEA. 
+
 ![](assets/intelliJMacOS/intelliJ_04.png)
 
 6. Click on New Project.
+
 ![](assets/intelliJMacOS/intelliJ_05.png)
 
 7. Click on JDK and select your newly downloaded Java 17 from the previous section.

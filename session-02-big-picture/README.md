@@ -122,7 +122,7 @@ Possibly prerecorded videos. Need offline support
 
 # Setting up IntelliJ
 ## On MacOS
-1. Go the download page by clicking the link.
+1. Go the download page by clicking the link below.
 
    [https://www.jetbrains.com/idea/download/?ij80pr#section=mac](https://www.jetbrains.com/idea/download/?ij80pr#section=mac)
 
@@ -135,26 +135,22 @@ Possibly prerecorded videos. Need offline support
 4. Click and drag the IntelliJ IDEA CE icon over to the Applications folder.
 ![](assets/intelliJMacOS/intelliJ_03.png)
 
-5. When you click on the IntelliJ IDEA CE icon, you may be prompted with a query asking if you want to open it. Click on Open to open IntelliJ IDEA. 
-
-![](assets/intelliJMacOS/intelliJ_04.png)
-
-6. Click on New Project.
+5. Click on New Project.
 
    ![](assets/intelliJMacOS/intelliJ_05.png)
 
-7. Click on JDK and select your newly downloaded Java 17 from the previous section.
+6. Click on the JDK tab and select your newly downloaded Java 17 JDK from the previous section.
    ![](assets/intelliJMacOS/intelliJ_06.png)
 
-8. When you open your project for the first time, IntelliJ will be indexing the JDK. You will be able to use the IDE after indexing is complete!
+7. When you open your project for the first time, IntelliJ will be indexing the JDK. You will be able to use the IDE after indexing is complete.
 ![](assets/intelliJMacOS/intelliJ_07.png)
 
  ### Post Install
  ## Git
-9. Click on VCS (Version Control System) and click on "Enable Version Control Integration" on your project. 
+8. Click on VCS (Version Control System) and click on "Enable Version Control Integration" on your project. 
 ![](assets/intelliJMacOS/intelliJ_08.png)
 
-10. You will be prompted with choices for "Version Control Integration". Select Git and then OK. 
+9. You will be prompted with choices for "Version Control Integration". Select Git and then OK. 
 ![](assets/intelliJMacOS/intelliJ_09.png)
 
 

@@ -141,10 +141,10 @@ Possibly prerecorded videos. Need offline support
 
 6. Click on New Project.
 
-![](assets/intelliJMacOS/intelliJ_05.png)
+   ![](assets/intelliJMacOS/intelliJ_05.png)
 
 7. Click on JDK and select your newly downloaded Java 17 from the previous section.
-![](assets/intelliJMacOS/intelliJ_06.png)
+   ![](assets/intelliJMacOS/intelliJ_06.png)
 
 8. When you open your project for the first time, IntelliJ will be indexing the JDK. You will be able to use the IDE after indexing is complete!
 ![](assets/intelliJMacOS/intelliJ_07.png)

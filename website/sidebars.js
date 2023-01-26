@@ -30,8 +30,10 @@ const sidebars = {
         'java-backend-bootcamp/java-basics/java-operators',
         'java-backend-bootcamp/java-basics/arrays',
         'java-backend-bootcamp/java-basics/classes',
+        'java-backend-bootcamp/java-basics/static',
         'java-backend-bootcamp/java-basics/inheritance',
         'java-backend-bootcamp/java-basics/nested-and-inner-classes',
+        'java-backend-bootcamp/java-basics/records',
       ],
     },
     {

@@ -16,7 +16,7 @@ record Point(int x, int y) {}
 
 This creates a record called Point with two private fields, x and y, and a public constructor that takes two int arguments.
 
-The fields are automatically generated as private final, and the constructor is automatically generated to initialize the fields with the arguments passed to it. The record also automatically gets methods like `equals()`, `hashCode()`, and `toString()` methods that are are derived from _all_ of the component fields.
+The fields are automatically generated as private final, and the constructor is automatically generated to initialize the fields with the arguments passed to it. The record also automatically gets methods like `equals()`, `hashCode()`, and `toString()` methods that are derived from _all_ of the component fields.
 
 ```java
 Point point1 = new Point(1, 2);

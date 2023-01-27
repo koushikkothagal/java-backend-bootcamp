@@ -202,7 +202,39 @@ You should get an output similar to what has been shown in image below.
 TODO
 
 ## On Mac
-TODO
+1. Click the download page by clicking on the link below.
+   [https://jdk.java.net/19/](https://jdk.java.net/19/)
+
+2. Hover over and click on the appropriate "tar.gz" file appropriate for your processor. If you have an M1 processor, click on "tar.gz" to the right of "macOS/AArch64". If you have an Intel processor, click on "tar.gz" to the right of "macOs/x64"
+
+   ![](assets/OpenJDK_MacOs/OpenJDK_Mac01.png)
+
+3. After the file has been downloaded, move it over to the Home directory (named with your user name). You can use the ```ls``` command to see all of the files in the current directory.
+
+   Before moving the file:   
+   ![](assets/OpenJDK_MacOs/OpenJDK_Mac02.png)
+   After moving the file:
+   ![](assets/OpenJDK_MacOs/OpenJDK_Mac03.png)
+
+
+4. Make a directory named "OpenJDK" in the Home directory. 
+
+5. You can use the commands below in the terminal to extract and move the files into the "OpenJDK" directory.
+
+6. Set up home and PATH environment variables by typing the command into your terminal.
+
+```cat >> .zshrc```
+and copy and pasting
+```export JAVA_HOME=$HOME/OpenJDK/jdk-19.0.2.jdk/Contents/Home```
+```export PATH=$JAVA_HOME/bin:$PATH```
+
+7. Hit Crtl+C
+
+8. Verify that you have the appropriate java and javac by typing
+```java -version```
+```javac -version```
+
+
 
 TODO
 Steps to get Java installed 

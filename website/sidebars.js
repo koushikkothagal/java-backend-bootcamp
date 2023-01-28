@@ -72,6 +72,19 @@ const sidebars = {
         'java-backend-bootcamp/lambdas-and-streams/java-streams',
       ],
     },
+    {
+      type: 'category',
+      label: 'Apache Maven',
+      link: {
+        type: 'generated-index',
+        title: 'Apache Maven',
+        slug: '/maven'
+      },
+      items: [
+        'java-backend-bootcamp/maven/introduction',
+        'java-backend-bootcamp/maven/the-maven-project'
+      ],
+    },
   ]
 };
 

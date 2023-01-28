@@ -273,11 +273,11 @@ TODO
 
 10. Close and reopen the terminal. If everything was successful, you can check the version of JRE and the Java Compiler from the home directory.
 
-   ```java -version```  
-   
-   ```javac -version```
+      ```java -version```  
+      
+      ```javac -version```
 
-   ![](assets/OpenJDK_MacOs/OpenJDK_Mac10.png)
+      ![](assets/OpenJDK_MacOs/OpenJDK_Mac10.png)
 
 
 # Setting up a relational DB (PostgresDB)

@@ -82,7 +82,15 @@ const sidebars = {
       },
       items: [
         'java-backend-bootcamp/maven/introduction',
-        'java-backend-bootcamp/maven/the-maven-project'
+        'java-backend-bootcamp/maven/the-maven-project',
+        'java-backend-bootcamp/maven/project-object-model',
+        'java-backend-bootcamp/maven/dependency-management',
+        'java-backend-bootcamp/maven/versioning-convention',
+        'java-backend-bootcamp/maven/plugins',
+        'java-backend-bootcamp/maven/maven-goals',
+        'java-backend-bootcamp/maven/build-lifecycle',
+        'java-backend-bootcamp/maven/repositories',
+        'java-backend-bootcamp/maven/profiles',
       ],
     },
   ]

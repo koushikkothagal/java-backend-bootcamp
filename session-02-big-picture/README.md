@@ -205,42 +205,81 @@ TODO
 1. Click the download page by clicking on the link below.
    [https://jdk.java.net/19/](https://jdk.java.net/19/)
 
-2. Hover over and click on the appropriate "tar.gz" file appropriate for your processor. If you have an M1 processor, click on "tar.gz" to the right of "macOS/AArch64". If you have an Intel processor, click on "tar.gz" to the right of "macOs/x64"
+2. Click on the appropriate "tar.gz" file appropriate for your processor. 
 
+   Intel processor, click on "tar.gz" to the right of "macOs/x64".
+   
+   M1 processor: Click on "tar.gz" to the right of "macOS/AArch64". 
+   
    ![](assets/OpenJDK_MacOs/OpenJDK_Mac01.png)
 
-3. After the file has been downloaded, move it over to the Home directory (named with your user name). You can use the ```ls``` command to see all of the files in the current directory.
+3. After the file has been downloaded, move it over to the home directory (named with your user name). 
+
+   You can use the 
+   ```cd ~``` command to move to the home directory.
+
+   You can use the 
+   ```ls``` command to see all of the files in the current directory.
 
    Before moving the file:   
-   ![](assets/OpenJDK_MacOs/OpenJDK_Mac02.png)
+   ![](assets/OpenJDK_MacOs/OpenJDK_Mac02.png)  
+
    After moving the file:
    ![](assets/OpenJDK_MacOs/OpenJDK_Mac03.png)
 
 
-4. Make a directory named "OpenJDK" in the Home directory. 
+4. Make a directory named "OpenJDK" in the home directory by      typing the command below into the terminal. 
+   ```mkdir OpenJDK```
 
-5. You can use the commands below in the terminal to extract and move the files into the "OpenJDK" directory.
+   ![](assets/OpenJDK_MacOs/OpenJDK_Mac04.png)
 
-6. Set up home and PATH environment variables by typing the command into your terminal.
+5. You can use the commands below extract and move the files into the "OpenJDK" directory.
+   ![](assets/OpenJDK_MacOs/OpenJDK_Mac05.png)  
 
-```cat >> .zshrc```
-and copy and pasting
-```export JAVA_HOME=$HOME/OpenJDK/jdk-19.0.2.jdk/Contents/Home```
-```export PATH=$JAVA_HOME/bin:$PATH```
+For Intel Processor:
+```tar -xf openjdk-19.0.2_macos-x64_bin.tar.gz -C $HOME/OpenJDK```  
 
-7. Hit Crtl+C
+For M1 Processor:
+```tar -xf openjdk-19.0.2_macos-aarch64_bin.tar.gz -C $HOME/OpenJDK```
 
-8. Verify that you have the appropriate java and javac by typing
-```java -version```
-```javac -version```
+6. We can verify that the files exist by entering the following into the terminal to get to the "bin" directory.
 
+   Note that the commands 1 and 2 are equivalent to command 3  
+      1) ```cd OpenJDK```  
+      2) ```cd jdk-19.0.2.jdk/Contents/Home/bin```  
+      3)```cd OpenJDK/jdk-19.0.2.jdk/Contents/Home/bin```   
+      ![](assets/OpenJDK_MacOs/OpenJDK_Mac06.png)
 
+7. Check if Java and the Java compiler exist by entering the      following commands.
 
-TODO
-Steps to get Java installed 
-    - OpenJDK option
-    - Docker option
-Possibly prerecorded videos. Need offline support
+   ```./java -version```
+   ```./javac -version```
+   ![](assets/OpenJDK_MacOs/OpenJDK_Mac07.png)
+
+8. Set up home and PATH environment variables by typing the command into your terminal.
+
+   ```cat >> .zshrc```
+   and copy and pasting
+   ```export JAVA_HOME=$HOME/OpenJDK/jdk-19.0.2.jdk/Contents/Home```
+   ```export PATH=$JAVA_HOME/bin:$PATH```  
+   If it freezes, hit Crtl+C.  
+
+   ![](assets/OpenJDK_MacOs/OpenJDK_Mac08.png)
+
+9. You can verify that the home and PATH environment variables are in the file by entering
+
+   ```cat zshrc``` 
+   into the terminal. 
+
+   ![](assets/OpenJDK_MacOs/OpenJDK_Mac09.png)
+
+10. Close and reopen the terminal. If everything was successful, you can check the version of Java and the Java Compiler from the home directory.
+
+   ```java -version```
+   ```javac -version```
+
+   ![](assets/OpenJDK_MacOs/OpenJDK_Mac10.png)
+
 
 # Setting up a relational DB (PostgresDB)
 TODO

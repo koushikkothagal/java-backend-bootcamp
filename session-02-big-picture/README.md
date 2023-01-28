@@ -202,10 +202,10 @@ You should get an output similar to what has been shown in image below.
 TODO
 
 ## On Mac
-1. Click the download page by clicking on the link below.  
+1. Click the link below to get to the download page.  
    [https://jdk.java.net/19/](https://jdk.java.net/19/)
 
-2. Click on the appropriate "tar.gz" file appropriate for your processor. 
+2. Click on the "tar.gz" file appropriate for your processor. 
 
    Intel processor: Click on "tar.gz" to the right of "macOs/x64".
    
@@ -213,11 +213,11 @@ TODO
    
    ![](assets/OpenJDK_MacOs/OpenJDK_Mac01.png)
 
-3. After the file has been downloaded, move it over to the home directory (named with your user name). 
+3. After the file has been downloaded, move it over to the home directory if it is not there already. 
 
-   You can use the ```cd ~``` command to move to the home directory.
+   Use the ```cd ~``` command to get to the home directory.
 
-   You can use the ```ls``` command to see all of the files in the current directory.
+   Use the ```ls``` command to see all of the files in the current directory.
 
    Before moving the file:   
    ![](assets/OpenJDK_MacOs/OpenJDK_Mac02.png)  
@@ -230,7 +230,7 @@ TODO
 
    ![](assets/OpenJDK_MacOs/OpenJDK_Mac04.png)
 
-5. You can use the commands below extract and move the files into the "OpenJDK" directory.
+5. Use the commands below extract and move the files into the "OpenJDK" directory.
 
    ![](assets/OpenJDK_MacOs/OpenJDK_Mac05.png)  
 
@@ -240,7 +240,7 @@ TODO
    For M1 Processor:
    ```tar -xf openjdk-19.0.2_macos-aarch64_bin.tar.gz -C $HOME/OpenJDK```
 
-6. We can verify that the files exist by entering the following into the terminal to get to the "bin" directory.
+6. Verify that the files exist by entering the following into the terminal to get to the "bin" directory.
 
    Note that the commands i and ii are equivalent to command iii
 
@@ -253,6 +253,7 @@ TODO
 7. Check if the Java runtime environment (JRE) and the Java compiler exist by entering the following independent commands.
 
    ```./java -version```  
+
    ```./javac -version```  
 
    ![](assets/OpenJDK_MacOs/OpenJDK_Mac07.png)

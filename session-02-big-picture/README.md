@@ -215,11 +215,13 @@ TODO
 
 3. After the file has been downloaded, move it over to the home directory if it is not there already. 
 
-   Use the ```sh  
+   To get to the home directory:
+   ```sh  
    $ cd ~
    ``` 
 
-   Use the ```sh  
+   To see all of the files in the current directory:
+   ```sh  
    $ ls
    ```
 
@@ -229,10 +231,10 @@ TODO
 4. Make a directory named "OpenJDK" in the home directory by      entering the following.  
 
    ```sh  
-   $ mkdir  OpenJDK
+   $ mkdir OpenJDK
    ```   
 
-5. Use the commands below extract and move the files into the "OpenJDK" directory. 
+5. Use the following command extract and move the files into the "OpenJDK" directory. 
 
    For Intel Processor:
    ```sh  
@@ -250,7 +252,7 @@ TODO
    $ cd OpenJDK/jdk-19.0.2.jdk/Contents/Home/bin
    ```  
 
-7. Check if the Java runtime environment (JRE) and the Java compiler exist by entering the following independent commands.
+7. Check if the Java runtime environment (JRE) and the Java compiler exist by entering the following.
 
    ```sh  
    $ java -version  
@@ -269,14 +271,20 @@ TODO
 
    ```sh  
    $ cat >> .zshrc  
-   export JAVA_HOME=$HOME/OpenJDK/jdk-19.0.2.jdk/Contents/Home  export PATH=$JAVA_HOME/bin:$PATH
+   export JAVA_HOME=$HOME/OpenJDK/jdk-19.0.2.jdk/Contents/Home<br>
+   export PATH=$JAVA_HOME/bin:$PATH
    ```  
 
    If it freezes, hit Crtl+C.  
 
-9. You can verify that the home and PATH environment variables are in the file by entering ```sh  $ cat .zshrc``` into the terminal.  
+9. You can verify that the home and PATH environment variables are in the file.
 
-10. Close and reopen the terminal. If everything was successful, you can check the version of JRE and the Java Compiler from the home directory.
+   ```sh  
+   $ cat .zshrc
+   export JAVA_HOME=$HOME/OpenJDK/jdk-19.0.2.jdk/Contents/Home  export PATH=$JAVA_HOME/bin:$PATH
+   ``` 
+
+10. Close and reopen the terminal. If everything was successful, you can check for the version of JRE and the Java Compiler from the home directory.
 
       ```sh  
       $ java -version  
@@ -289,7 +297,6 @@ TODO
       $ javac -version  
       javac 19.0.2
       ```
-
 
 # Setting up a relational DB (PostgresDB)
 TODO

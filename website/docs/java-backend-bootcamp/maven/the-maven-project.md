@@ -9,7 +9,11 @@ Maven provides an easy way to create a new project with a specific project struc
 To create a new Maven project using the command line, you can use the command `mvn archetype:generate`. This command will prompt you to select a project archetype (a project template) and enter some basic information about the project, such as the groupId, artifactId, and package name.
 
 ```sh
-mvn archetype:generate -DgroupId=com.example -DartifactId=myproject -Dversion=1.0-SNAPSHOT -Dpackage=com.example.myproject
+mvn archetype:generate
+  -DgroupId=com.example
+  -DartifactId=myproject
+  -Dversion=1.0-SNAPSHOT
+  -Dpackage=com.example.myproject
 ```
 
 Once the command is executed, Maven will create a new directory with the project structure and the necessary configuration files.
@@ -20,12 +24,12 @@ Alternatively, you can use an IDE like Eclipse or IntelliJ IDEA, to create a new
 
 A Maven project has a specific directory structure. The main directories are:
 
-`src/main/java`: contains the main source code
-`src/main/resources`: contains the resources files
-`src/test/java`: contains the test source code
-`src/test/resources`: contains the test resources files
-`target`: contains the generated files like the compiled code and the JAR file
-`pom.xml`: contains the project's configuration
+- `src/main/java`: contains the main source code
+- `src/main/resources`: contains the resources files
+- `src/test/java`: contains the test source code
+- `src/test/resources`: contains the test resources files
+- `target`: contains the generated files like the compiled code and the JAR file
+- `pom.xml`: contains the project's configuration
 
 ## The pom.xml file
 
@@ -83,7 +87,7 @@ When a developer uses the command `mvn archetype:generate` to create a new proje
 
 Maven archetypes can also be created by developers and made available in a custom remote repository or in a local repository. Developers can create their own archetypes and use them to create new projects. These archetypes can be made available in a custom remote repository or in a local repository, and can be specified in the POM file or the settings.xml file.
 
-For example, if a developer has created a custom archetype and made it available in a remote repository with the url "http://my-repo.com/maven", They can use the following command to create a new project using the custom archetype:
+For example, if a developer has created a custom archetype and made it available in a remote repository with the url `http://my-repo.com/maven`, They can use the following command to create a new project using the custom archetype:
 
 ```sh
 mvn archetype:generate

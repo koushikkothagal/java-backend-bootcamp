@@ -16,7 +16,7 @@ In addition, Maven allows developers to easily manage different environments by 
 
 ## Example POM file
 
-````xml
+```xml
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
@@ -115,4 +115,3 @@ Here's an example of a profile in the POM file:
 To activate this profile, developers can use the command `mvn clean install -Pdev`
 
 In conclusion, Maven is a powerful tool for managing Java projects and simplifying the build process. It allows developers to easily manage dependencies, provides a standard build process, and allows for the use of plugins to perform various tasks. Additionally, Maven's support for profiles allows developers to easily manage different environments. By understanding Maven's concepts and commands, developers can streamline their development process and focus on writing code.
-````

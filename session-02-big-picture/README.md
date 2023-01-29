@@ -244,7 +244,7 @@ Possibly prerecorded videos. Need offline support
     1. First, configure your username and email since every git commit uses this information, type the following commands in terminal
 
                 git config --global user.name "Vijaysai"
-                git config --gloabl user.email "vijaysai@example.com"
+                git config --global user.email "vijaysai@example.com"
     2. To verify if your username and email were properly set use the following command
     
         ```git config user.name``` 
@@ -262,9 +262,9 @@ Possibly prerecorded videos. Need offline support
 Linux comes with git pre-installed, you can check the version of git by typing the following command in terminal
 
 ```console
-git --version
+$ git --version
+git version 2.37.1
 ```
-![git version](./assets/git-linux-setup/git-version.png)
 
 If that's not the case, follow the steps below to install git
 
@@ -281,12 +281,11 @@ sudo apt-get install git
 
 3. After the installation is complete, set up your username and email by typing the following commands in terminal
 
-```console
 
 ```console
 git config --global user.name "yourUserName"
 
-git config --gloabl user.email "youremail@example.com"
+git config --global user.email "youremail@example.com"
 ```
 
 4. Now you are ready to clone the repository, type the following command in terminal

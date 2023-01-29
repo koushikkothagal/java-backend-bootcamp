@@ -271,7 +271,7 @@ TODO
 
    ```sh  
    $ cat >> .zshrc  
-   export JAVA_HOME=$HOME/OpenJDK/jdk-19.0.2.jdk/Contents/Home<br>
+   export JAVA_HOME=$HOME/OpenJDK/jdk-19.0.2.jdk/Contents/Home
    export PATH=$JAVA_HOME/bin:$PATH
    ```  
 
@@ -281,7 +281,8 @@ TODO
 
    ```sh  
    $ cat .zshrc
-   export JAVA_HOME=$HOME/OpenJDK/jdk-19.0.2.jdk/Contents/Home  export PATH=$JAVA_HOME/bin:$PATH
+   export JAVA_HOME=$HOME/OpenJDK/jdk-19.0.2.jdk/Contents/Home
+   export PATH=$JAVA_HOME/bin:$PATH
    ``` 
 
 10. Close and reopen the terminal. If everything was successful, you can check for the version of JRE and the Java Compiler from the home directory.

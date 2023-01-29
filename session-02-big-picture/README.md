@@ -209,76 +209,54 @@ TODO
 
    Intel processor: Click on "tar.gz" to the right of "macOs/x64".
    
-   M1 processor: Click on "tar.gz" to the right of "macOS/AArch64". 
+   Apple Silicon processor: Click on "tar.gz" to the right of "macOS/AArch64". 
    
    ![](assets/OpenJDK_MacOs/OpenJDK_Mac01.png)
 
 3. After the file has been downloaded, move it over to the home directory if it is not there already. 
 
-   Use the ```cd ~``` command to get to the home directory.
+   Use the ```sh  $ cd ~``` command to get to the home directory.
 
-   Use the ```ls``` command to see all of the files in the current directory.
+   Use the ```sh  $ ls``` command to see all of the files in the current directory.
 
-   Before moving the file:   
-   ![](assets/OpenJDK_MacOs/OpenJDK_Mac02.png)  
-
-   After moving the file:  
-   ![](assets/OpenJDK_MacOs/OpenJDK_Mac03.png)
+   There file name of "openjdk-19.0.2_macos-aarch64_bin.tar.gz" or "openjdk-19.0.2_macos-x64_bin.tar.gz" should be in your home directory.
 
 
-4. Make a directory named "OpenJDK" in the home directory by      typing ```mkdir OpenJDK``` into the terminal.
+4. Make a directory named "OpenJDK" in the home directory by      typing ```sh  $ mkdir  OpenJDK``` into the terminal.
 
-   ![](assets/OpenJDK_MacOs/OpenJDK_Mac04.png)
 
-5. Use the commands below extract and move the files into the "OpenJDK" directory.
-
-   ![](assets/OpenJDK_MacOs/OpenJDK_Mac05.png)  
+5. Use the commands below extract and move the files into the "OpenJDK" directory. 
 
    For Intel Processor:
-   ```tar -xf openjdk-19.0.2_macos-x64_bin.tar.gz -C $HOME/OpenJDK```  
+   ```sh  $ tar -xf openjdk-19.0.2_macos-x64_bin.tar.gz -C $HOME/OpenJDK```  
 
-   For M1 Processor:
-   ```tar -xf openjdk-19.0.2_macos-aarch64_bin.tar.gz -C $HOME/OpenJDK```
+   For Apple Silicon Processor:
+   ```sh  $ tar -xf openjdk-19.0.2_macos-aarch64_bin.tar.gz -C $HOME/OpenJDK```
 
 6. Verify that the files exist by entering the following into the terminal to get to the "bin" directory.
 
-   Note that the commands i and ii are equivalent to command iii
-
-      1) ```cd OpenJDK```  
-      2) ```cd jdk-19.0.2.jdk/Contents/Home/bin```  
-      3) ```cd OpenJDK/jdk-19.0.2.jdk/Contents/Home/bin```  
-
-      ![](assets/OpenJDK_MacOs/OpenJDK_Mac06.png)
+   ```sh  $ cd OpenJDK/jdk-19.0.2.jdk/Contents/Home/bin```  
 
 7. Check if the Java runtime environment (JRE) and the Java compiler exist by entering the following independent commands.
 
-   ```./java -version```  
+   ```sh  $ java -version  openjdk version 19.0.2 2023-01-17  OpenJDK Runtime Environment (build 19.0.2+7-44)  OpenJDK 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)```  
+      
+   ```sh  $ javac -version  javac 19.0.2```  
 
-   ```./javac -version```  
 
-   ![](assets/OpenJDK_MacOs/OpenJDK_Mac07.png)
+8. Set up home and PATH environment variables by entering the following.
 
-8. Set up home and PATH environment variables by first typing ```cat >> .zshrc``` into the terminal and copy and pasting  
-
-   ```export JAVA_HOME=$HOME/OpenJDK/jdk-19.0.2.jdk/Contents/Home```  
-
-   ```export PATH=$JAVA_HOME/bin:$PATH```  
+   ```sh  $ cat >> .zshrc  export JAVA_HOME=$HOME/OpenJDK/jdk-19.0.2.jdk/Contents/Home  export PATH=$JAVA_HOME/bin:$PATH```  
 
    If it freezes, hit Crtl+C.  
 
-   ![](assets/OpenJDK_MacOs/OpenJDK_Mac08.png)
-
-9. You can verify that the home and PATH environment variables are in the file by entering ```cat zshrc``` into the terminal.  
-
-   ![](assets/OpenJDK_MacOs/OpenJDK_Mac09.png)
+9. You can verify that the home and PATH environment variables are in the file by entering ```sh  $ cat .zshrc``` into the terminal.  
 
 10. Close and reopen the terminal. If everything was successful, you can check the version of JRE and the Java Compiler from the home directory.
 
-      ```java -version```  
+   ```sh  $ java -version  openjdk version 19.0.2 2023-01-17  OpenJDK Runtime Environment (build 19.0.2+7-44)  OpenJDK  64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)```  
       
-      ```javac -version```
-
-      ![](assets/OpenJDK_MacOs/OpenJDK_Mac10.png)
+   ```sh  $ javac -version  javac 19.0.2```
 
 
 # Setting up a relational DB (PostgresDB)

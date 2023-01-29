@@ -210,26 +210,27 @@ TODO
    Intel processor: Click on "tar.gz" to the right of "macOs/x64".
    
    Apple Silicon processor: Click on "tar.gz" to the right of "macOS/AArch64". 
-   
+
    ![](assets/OpenJDK_MacOs/OpenJDK_Mac01.png)
 
 3. After the file has been downloaded, move it over to the home directory if it is not there already. 
 
    Use the ```sh  
    $ cd ~
-   ``` command to get to the home directory.
+   ``` 
 
    Use the ```sh  
    $ ls
-   ``` command to see all of the files in the current directory.
+   ```
 
    There file name of "openjdk-19.0.2_macos-aarch64_bin.tar.gz" or "openjdk-19.0.2_macos-x64_bin.tar.gz" should be in your home directory.  
 
 
-4. Make a directory named "OpenJDK" in the home directory by      typing ```sh  
-$ mkdir  OpenJDK
-``` into the terminal.  
+4. Make a directory named "OpenJDK" in the home directory by      entering the following.  
 
+   ```sh  
+   $ mkdir  OpenJDK
+   ```   
 
 5. Use the commands below extract and move the files into the "OpenJDK" directory. 
 
@@ -252,11 +253,15 @@ $ mkdir  OpenJDK
 7. Check if the Java runtime environment (JRE) and the Java compiler exist by entering the following independent commands.
 
    ```sh  
-   $ java -version  openjdk version 19.0.2 2023-01-17  OpenJDK Runtime Environment (build 19.0.2+7-44)  OpenJDK 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
+   $ java -version  
+   openjdk version 19.0.2 2023-01-17  
+   OpenJDK Runtime Environment (build 19.0.2+7-44)  
+   OpenJDK 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
    ```  
       
    ```sh  
-   $ javac -version  javac 19.0.2
+   $ javac -version  
+   javac 19.0.2
    ```  
 
 
@@ -273,17 +278,17 @@ $ mkdir  OpenJDK
 
 10. Close and reopen the terminal. If everything was successful, you can check the version of JRE and the Java Compiler from the home directory.
 
-   ```sh  
-   $ java -version  
-   openjdk version 19.0.2 2023-01-17  
-   OpenJDK Runtime Environment (build 19.0.2+7-44)  
-   OpenJDK  64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
-   ```  
-      
-   ```sh  
-   $ javac -version  
-   javac 19.0.2
-   ```
+      ```sh  
+      $ java -version  
+      openjdk version 19.0.2 2023-01-17  
+      OpenJDK Runtime Environment (build 19.0.2+7-44)  
+      OpenJDK  64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
+      ```  
+         
+      ```sh  
+      $ javac -version  
+      javac 19.0.2
+      ```
 
 
 # Setting up a relational DB (PostgresDB)

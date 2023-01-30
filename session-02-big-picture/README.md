@@ -216,37 +216,36 @@ Make a note of copied URL. This will be used to download openjdk on Linux PC.
 3.	Login to your Linux PC and open terminal app.
 
 4.	Make a new folder openjdk19 at your home directory and navigate to the newly created directory.
-
-$mkdir ~/openjdk19
-
-$cd ~/openjdk19
-       
+```sh
+$ mkdir ~/openjdk19
+$ cd ~/openjdk19
+```
 ![](assets/java_setup_linux/02createdirs.png)
 
 5.	Use wget to download the openjdk from the URL copied from Step 2.
-
-~/openjdk19$wget https://download.java.net/java/GA/jdk19.0.2/fdb695a9d9064ad6b064dc6df578380c/7/GPL/openjdk-19.0.2_linux-x64_bin.tar.gz
-
+```sh
+~/openjdk19$ wget https://download.java.net/java/GA/jdk19.0.2/fdb695a9d9064ad6b064dc6df578380c/7/GPL/openjdk-19.0.2_linux-x64_bin.tar.gz
+```
 ![](assets/java_setup_linux/03downloadjava.png)
 
 6.	List the files in openjdk19 directory and extract the downloaded tar ball.
-
-~/openjdk19$tar -xvf openjdk-19.0.2_linux-x64_bin.tar.gz
-
+```sh
+~/openjdk19$ tar -xvf openjdk-19.0.2_linux-x64_bin.tar.gz
+```
 ![](assets/java_setup_linux/04extractjava.png)
 
 7.	List the files again:
-
-~/openjdk19$ll
-
+```sh
+~/openjdk19$ ll
+```
 Navigate to extracted directory (jdk-19.0.2)
-
-~/openjdk19$cd jdk-19.0.2
-
+```sh
+~/openjdk19$ cd jdk-19.0.2
+```
 Get the absolute path of directory:
-
-~/openjdk19/ jdk-19.0.2$pwd
-
+```sh
+~/openjdk19/jdk-19.0.2$ pwd
+```
 ![](assets/java_setup_linux/05getabsolutepath.png)
 
 8.	This the Path where openjdk has been downloaded and extracted. Make a Note of this path.
@@ -254,15 +253,14 @@ Get the absolute path of directory:
 ### Setting up Java in PATH variable and JAVA_HOME variable.
 
 1.	Open the .bashrc file in your home directory in any text editor.
-
-~/openjdk19$nano ~/.bashrc
-
+```sh
+~/openjdk19$ nano ~/.bashrc
+```
 2.	Navigate to end of the file and make below entries in the file:
-
+```sh
 export JAVA_HOME=/home/mohit/openjdk19/jdk-19.0.2
-
 export PATH=$JAVA_HOME/bin:$PATH
-
+```
 ![](assets/java_setup_linux/06editbashrc.png)
 
 3.	Save the file and exit the editor.
@@ -270,27 +268,25 @@ export PATH=$JAVA_HOME/bin:$PATH
 (For nano editor, use ‘Ctrl + X’ to exit. Editor will ask confirmation to save changes to file. Just press Enter key to make changes in .bashrc file).
 
 4.	(Optional) Verify if changes are saved properly by listing the content of file.
-
-~/openjdk$cat ~/.bashrc
-
+```sh
+~/openjdk$ cat ~/.bashrc
+```
 ![](assets/java_setup_linux/07catbashrc.png)
 
 5.	Execute below command to ensure changes are applied.
-
-~/openjdk10$source ~/.bashrc
-
+```sh
+~/openjdk10$ source ~/.bashrc
+```
 ![](assets/java_setup_linux/08applychanges.png)
 
 ### Verifying Java setup:
 
 Run the below commands to check to Java is correctly set.
-
-~/openjdk19$echo $JAVA_HOME
-
-~/openjdk19$java -version
-
-~/openjdk19$javac -version
-
+```sh
+~/openjdk19$ echo $JAVA_HOME
+~/openjdk19$ java -version
+~/openjdk19$ javac -version
+```
 ![](assets/java_setup_linux/09verifyjava.png)
 
 ## On Mac

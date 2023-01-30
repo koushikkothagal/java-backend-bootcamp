@@ -2,7 +2,7 @@
 
 ## Object equality
 
-In Java, two objects are considered equal if they are the same instance. However, we tend to percieve obejcts equal if their states are the same. The state of an object includes the values of its fields, and the state of any objects referenced by those fields. By default, the equality of two objects is determined by comparing their memory addresses using the `==` operator. But, this default behavior can be overridden by implementing the `equals()` method.
+In Java, two objects are considered equal if they are the same instance. However, we tend to percieve objects equal if their states are the same. The state of an object includes the values of its fields, and the state of any objects referenced by those fields. By default, the equality of two objects is determined by comparing their memory addresses using the `==` operator. But, this default behavior can be overridden by implementing the `equals()` method.
 
 The `equals()` method is a method defined in the `Object` class, which is the parent class of all objects in Java. The method is used to determine if two objects are equal. The default implementation of the `equals()` method compares the memory addresses of the two objects using the `==` operator. This means that, by default, `equals()` deems two objects equal only if they are the same instance.
 

@@ -243,6 +243,10 @@ words.stream()
     .ifPresent(System.out::println);
 ```
 
+:::note
+Some terminal operations need to process all the data in a stream (example: `forEach()` and `toList()`). Some others can "short circuit" and stop processing data as soon as it's job is done (example: `findFirst()`, `findAny()`)
+:::
+
 # Collectors
 
 Java Stream Collectors is a class in the Java Standard Library that provides a set of methods for performing common reduction operations on streams, such as accumulating elements into collections, summarizing elements according to various criteria, and joining elements into a string.

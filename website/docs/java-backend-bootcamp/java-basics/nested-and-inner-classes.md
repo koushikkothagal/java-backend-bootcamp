@@ -41,10 +41,10 @@ OuterClass.InnerClass innerObject = outerObject.new InnerClass();
 
 Inner classes are further classified as Member Inner class, Local Inner class, Anonymous Inner class, and Lambda Expression.
 
-Member Inner class: a class defined inside another class but outside a method
-Local Inner class: a class defined inside a method
-Anonymous Inner class: a class without a name defined inside a method
-Lambda Expression: a functional interface defined inside a method
+Member Inner class: a class defined inside another class but outside a method.  
+Local Inner class: a class defined inside a method.  
+Anonymous Inner class: a class without a name defined inside a method.  
+Lambda Expression: a functional interface defined inside a method.  
 Let's see each of them in detail with an example:
 
 ## Member Inner class

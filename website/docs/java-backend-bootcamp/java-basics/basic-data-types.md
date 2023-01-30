@@ -73,4 +73,17 @@ The variable "myString" is actually a reference to the String object "Hello Worl
 Understand the difference between a primitive and its corresponding non-primitive wrapper class. For example, the int data type has a corresponding non-primitive wrapper class called Integer. The wrapper class provides additional methods for working with the primitive data type.
 :::
 
-In summary, it's important to understand the different data types available in Java and to choose the appropriate data type for your variables based on the requirements of your program. This includes understanding the difference between primitive and non-primitive data types, and the corresponding wrapper classes for primitives.
+## Wrapper classes
+
+Wrapper classes in Java are used to convert primitive data types into objects. All primitive types (e.g. int, float, boolean) have a corresponding wrapper class (e.g. Integer, Float, Boolean). The wrapper classes are found in the `java.lang` package and are used to perform operations that are not possible with primitive data types.
+
+Each wrapper class has a constructor that takes a single argument, which is the primitive data type value. For example, to convert an `int` to an `Integer`, you can use the following code:
+
+```java
+int i = 10;
+Integer intWrapper = new Integer(i);
+```
+
+The wrapper classes also provide methods that can be used to perform operations on the wrapped value. For example, the `Integer` class provides methods such as `intValue()`, `compareTo()`, and `valueOf()` to perform operations such as converting the wrapped value to a primitive `int`, comparing two `Integer` objects, and converting a `String` to an `Integer`.
+
+Wrapper classes are also useful when working with collections, because collections can only store objects and not primitive data types. Wrapper classes also provide additional functionality such as autoboxing and unboxing which allows to automatically convert between primitive and wrapper classes without the need of explicit conversion.

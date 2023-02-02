@@ -87,11 +87,7 @@ b.	Type ‘C:\’ in textbox and click ‘OK’ button.
 
 c.	This will open file browser in at c:\ location.
 
-d.	Right click on free space and navigate to new option and click on 'Folder' option.
-
-![](assets/java_setup_win/03create-folder.png)
-
-e.	This will create a New Folder. Type and ‘open-jdk’ and press ‘Enter’ key.
+d.	Create a New Folder and name it 'open-jdk'.
 
 ![](assets/java_setup_win/04openjdk-folder.png)
 
@@ -179,8 +175,7 @@ After performing all the steps above, open jdk should be setup on your computer.
 
 1.	Press windows + r button to open ‘Run’ window and type cmd in text box.
 
-![](assets/java_setup_win/
-18run-cmd.png)
+![](assets/java_setup_win/18run-cmd.png)
 
 2.	Click on ‘OK’ button to open command prompt.
 
@@ -199,7 +194,100 @@ You should get an output similar to what has been shown in image below.
 ![](assets/java_setup_win/19java-verify.png)
 
 ## On Linux
-TODO
+Different Linux distros uses different package managers to install software. If you are familiar with installing software on your Linux machine, you can use inbuilt package manager for installation. After installing Java, you can proceed to verifying Java section and verify if Java is correctely installed.
+
+For a more generic experience and to avoid permission issues, we will follow steps to setup Java manually.
+
+Below steps can be used to setup OpenJDK 19 (latest stable GA version) on your Linux PC.
+### Downloaing Java
+
+1.	Open https://jdk.java.net/19/ in your web browser.
+
+This step can be done any PC and is used to just get URL to download openjdk binaries for setting up on Linux PC.
+
+2.	Right click ‘zip’ hyperlink against ‘Linux / x64’ as highlighted in image below and click ‘Copy Link’.
+
+At time of writing this article, URL is: https://download.java.net/java/GA/jdk19.0.2/fdb695a9d9064ad6b064dc6df578380c/7/GPL/openjdk-19.0.2_linux-x64_bin.tar.gz
+
+![](assets/java_setup_linux/01copyurl.png)
+
+Make a note of copied URL. This will be used to download openjdk on Linux PC.
+
+3.	Login to your Linux PC and open terminal app.
+
+4.	Make a new folder openjdk19 at your home directory and navigate to the newly created directory.
+```sh
+$ mkdir ~/openjdk19
+$ cd ~/openjdk19
+```
+![](assets/java_setup_linux/02createdirs.png)
+
+5.	Use wget to download the openjdk from the URL copied from Step 2.
+```sh
+~/openjdk19$ wget https://download.java.net/java/GA/jdk19.0.2/fdb695a9d9064ad6b064dc6df578380c/7/GPL/openjdk-19.0.2_linux-x64_bin.tar.gz
+```
+![](assets/java_setup_linux/03downloadjava.png)
+
+6.	List the files in openjdk19 directory and extract the downloaded tar ball.
+```sh
+~/openjdk19$ tar -xvf openjdk-19.0.2_linux-x64_bin.tar.gz
+```
+![](assets/java_setup_linux/04extractjava.png)
+
+7.	List the files again:
+```sh
+~/openjdk19$ ll
+```
+Navigate to extracted directory (jdk-19.0.2)
+```sh
+~/openjdk19$ cd jdk-19.0.2
+```
+Get the absolute path of directory:
+```sh
+~/openjdk19/jdk-19.0.2$ pwd
+```
+![](assets/java_setup_linux/05getabsolutepath.png)
+
+8.	This the Path where openjdk has been downloaded and extracted. Make a Note of this path.
+
+### Setting up Java in PATH variable and JAVA_HOME variable.
+
+1.	Open the .bashrc file in your home directory in any text editor.
+```sh
+~/openjdk19$ nano ~/.bashrc
+```
+2.	Navigate to end of the file and make below entries in the file:
+```sh
+export JAVA_HOME=/home/mohit/openjdk19/jdk-19.0.2
+export PATH=$JAVA_HOME/bin:$PATH
+```
+![](assets/java_setup_linux/06editbashrc.png)
+
+3.	Save the file and exit the editor.
+
+(For nano editor, use ‘Ctrl + X’ to exit. Editor will ask confirmation to save changes to file. Just press Enter key to make changes in .bashrc file).
+
+4.	(Optional) Verify if changes are saved properly by listing the content of file.
+```sh
+~/openjdk$ cat ~/.bashrc
+```
+![](assets/java_setup_linux/07catbashrc.png)
+
+5.	Execute below command to ensure changes are applied.
+```sh
+~/openjdk10$ source ~/.bashrc
+```
+![](assets/java_setup_linux/08applychanges.png)
+
+### Verifying Java setup:
+
+Run the below commands to check to Java is correctly set.
+```sh
+~/openjdk19$ echo $JAVA_HOME
+~/openjdk19$ java -version
+~/openjdk19$ javac -version
+```
+![](assets/java_setup_linux/09verifyjava.png)
 
 ## On Mac
 1. Click the link below to get to the download page.  

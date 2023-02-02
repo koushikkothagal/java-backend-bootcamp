@@ -202,13 +202,102 @@ You should get an output similar to what has been shown in image below.
 TODO
 
 ## On Mac
-TODO
+1. Click the link below to get to the download page.  
+   [https://jdk.java.net/19/](https://jdk.java.net/19/)
 
-TODO
-Steps to get Java installed 
-    - OpenJDK option
-    - Docker option
-Possibly prerecorded videos. Need offline support
+2. Click on the "tar.gz" file appropriate for your processor. 
+
+   Intel processor: Click on "tar.gz" to the right of "macOs/x64".
+   
+   Apple Silicon processor: Click on "tar.gz" to the right of "macOS/AArch64". 
+
+   ![](assets/OpenJDK_MacOs/OpenJDK_Mac01.png)
+
+3. After the file has been downloaded, move it over to the home directory if it is not there already. 
+
+   To get to the home directory:
+   ```sh  
+   $ cd ~
+   ``` 
+
+   To see all of the files in the current directory:
+   ```sh  
+   $ ls
+   ```
+
+   There file name of "openjdk-19.0.2_macos-aarch64_bin.tar.gz" or "openjdk-19.0.2_macos-x64_bin.tar.gz" should be in your home directory.  
+
+
+4. Make a directory named "OpenJDK" in the home directory by      entering the following.  
+
+   ```sh  
+   $ mkdir OpenJDK
+   ```   
+
+5. Use the following command extract and move the files into the "OpenJDK" directory. 
+
+   For Intel Processor:
+   ```sh  
+   $ tar -xf openjdk-19.0.2_macos-x64_bin.tar.gz -C $HOME/OpenJDK
+   ```  
+
+   For Apple Silicon Processor:
+   ```sh  
+   $ tar -xf openjdk-19.0.2_macos-aarch64_bin.tar.gz -C $HOME/OpenJDK
+   ```
+
+6. Verify that the files exist by entering the following into the terminal to get to the "bin" directory.
+
+   ```sh  
+   $ cd OpenJDK/jdk-19.0.2.jdk/Contents/Home/bin
+   ```  
+
+7. Check if the Java runtime environment (JRE) and the Java compiler exist by entering the following.
+
+   ```sh  
+   $ java -version  
+   openjdk version 19.0.2 2023-01-17  
+   OpenJDK Runtime Environment (build 19.0.2+7-44)  
+   OpenJDK 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
+   ```  
+      
+   ```sh  
+   $ javac -version  
+   javac 19.0.2
+   ```  
+
+
+8. Set up home and PATH environment variables by entering the following.
+
+   ```sh  
+   $ cat >> .zshrc  
+   export JAVA_HOME=$HOME/OpenJDK/jdk-19.0.2.jdk/Contents/Home
+   export PATH=$JAVA_HOME/bin:$PATH
+   ```  
+
+   If it freezes, hit Crtl+C.  
+
+9. You can verify that the home and PATH environment variables are in the file.
+
+   ```sh  
+   $ cat .zshrc
+   export JAVA_HOME=$HOME/OpenJDK/jdk-19.0.2.jdk/Contents/Home
+   export PATH=$JAVA_HOME/bin:$PATH
+   ``` 
+
+10. Close and reopen the terminal. If everything was successful, you can check for the version of JRE and the Java Compiler from the home directory.
+
+      ```sh  
+      $ java -version  
+      openjdk version 19.0.2 2023-01-17  
+      OpenJDK Runtime Environment (build 19.0.2+7-44)  
+      OpenJDK  64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
+      ```  
+         
+      ```sh  
+      $ javac -version  
+      javac 19.0.2
+      ```
 
 # Setting up a relational DB (PostgresDB)
 TODO

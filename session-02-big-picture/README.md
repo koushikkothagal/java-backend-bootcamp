@@ -395,7 +395,7 @@ Steps to get PostgresDB installed locally
 Possibly prerecorded videos. Need offline support
 
 # Git and GitHub
-### On windows
+
 ## On Windows
 1. Go to download page using the following link
 
@@ -421,7 +421,7 @@ Possibly prerecorded videos. Need offline support
     1. First, configure your username and email since every git commit uses this information, type the following commands in terminal
 
                 git config --global user.name "Vijaysai"
-                git config --gloabl user.email "vijaysai@example.com"
+                git config --global user.email "vijaysai@example.com"
     2. To verify if your username and email were properly set use the following command
     
         ```git config user.name``` 
@@ -433,6 +433,43 @@ Possibly prerecorded videos. Need offline support
        
        ```git clone https://github.com/koushikkothagal/java-backend-bootcamp.git```
     
+
+## On Linux
+
+Linux comes with git pre-installed, you can check the version of git by typing the following command in terminal
+
+```console
+$ git --version
+git version 2.37.1
+```
+
+If that's not the case, follow the steps below to install git
+
+1. Open terminal and type the following command to update the package list
+
+```console
+sudo apt-get update
+```
+2. Type the following command to install git
+```console
+sudo apt-get install git
+```
+![git installing](./assets/git-linux-setup/installing-git.png)
+
+3. After the installation is complete, set up your username and email by typing the following commands in terminal
+
+
+```console
+git config --global user.name "yourUserName"
+
+git config --global user.email "youremail@example.com"
+```
+
+4. Now you are ready to clone the repository, type the following command in terminal
+
+```console
+git clone https://github.com/koushikkothagal/java-backend-bootcamp.git
+```
 
 # Setting up IntelliJ
 ## On MacOS

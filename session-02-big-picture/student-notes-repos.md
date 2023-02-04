@@ -1,3 +1,2 @@
 # Student notes repos (Add yours here)
-- URL1
-- URL2
+- https://github.com/Raj04/Spring-Bootcamp/blob/main/Week-1/WEEK1.md

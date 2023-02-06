@@ -1,3 +1,3 @@
 # Student notes repos (Add yours here)
-- URL1
+- https://github.com/Sngpt/javabrains-bootcamp-notes
 - URL2

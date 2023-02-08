@@ -1,6 +1,7 @@
 # Student notes repos (Atirsaw s Repo)
 # Forking
 # Clonning
+# Creating a new branche
 # making changes
 # Pushing
 # Create a pull request

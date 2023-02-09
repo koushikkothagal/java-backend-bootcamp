@@ -1,3 +1,2 @@
 # Student notes repos (Add yours here)
-- URL1
-- URL2
+- https://github.com/samalprasant123/java-bootcamp-notes.git

@@ -1,3 +1,2 @@
 # Student notes repos (Add yours here)
-- URL1
-- URL2
+- [Kashish- Bootcamp Session 2 Notes](https://github.com/K-ash-ish/bootcamp-notes)

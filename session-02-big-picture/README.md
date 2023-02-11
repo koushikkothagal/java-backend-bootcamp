@@ -55,8 +55,19 @@ In this bootcamp, we will focus on the most popular protocol used for this today
 
 
 # What we'll be building
-TODO
-Placeholder explaining the final projects
+
+Final project options:
+
+- A RESTful API (Application Programming Interface) for a e-commerce website that allows users to view products, add items to a shopping cart, and place orders
+
+- A social media platform that allows users to create profiles, post updates, and connect with friends
+
+- A project management tool that allows teams to collaborate on tasks and projects
+
+- A blog / Content Management System that allows organizations to manage and distribute content through website or application, consisting of a "public" set of APIs for viewing and navigating blog and a "private" set of APIs for managing content
+
+- A job portal that allows job seekers and recruiters to connect, search and apply for jobs, the backend would handle user management, job posting, and resume management 
+
 
 # Where we'll be building
 TODO
@@ -69,43 +80,15 @@ Explain dev workflow
 # Setting up Java
 ## On Windows
 Below steps can be used to setup OpenJDK 19 (latest stable GA version) on your Windows PC.
-### Downloaing Java
+### Downloading Java
 1.	Open https://jdk.java.net/19/ in your web browser.
 2.	Click in ‘zip’ hyperlink against Windows/ x64 as highlighted in image below:
 ![](assets/java_setup_win/01openjdk-download.png)
 
-3.	This shall start with download of openjdk.
-
-4.	Create a new folder in C:\ of computer called openjdk.
-Use below steps to create the folder:
-
-a.	Open ‘Run’ prompt by clicking Windows + r key on your keyboard.
-
-b.	Type ‘C:\’ in textbox and click ‘OK’ button.
-
-![](assets/java_setup_win/02run-c-drive.png)
-
-c.	This will open file browser in at c:\ location.
-
-d.	Create a New Folder and name it 'open-jdk'.
-
+3.	Create a new folder in C:\ of computer called openjdk.
 ![](assets/java_setup_win/04openjdk-folder.png)
 
-5.	Copy the downloaded zip file (from step 3) into Java folder and unzip it.
-
-Use below steps to unzip the file.
-
-a.	Navigate to folder c:\openjdk and open the pasted zip file.
-
-![](assets/java_setup_win/05copy-zip.png)
-
-b.	Select all the folder (usually shall contain only a single jdk folder) with-in the zip (press ctrl + a) and copy (press ctrl + c) to clipboard.
-
-c.	Navigate back to c:\openjdk and paste the copied folder (press ctrl + v)
-
-![](assets/java_setup_win/06extract-zip.png)
-
-d.	Navigate to the pasted folder (jdk-19.0.2) and make a note of absolute path.
+4.	Copy the downloaded zip file (from step 2) into Java folder and unzip it.
 
 Absolute path in image above will be “C:\openjdk\jdk-19.0.2”. If your folder name is different, make the changes accordingly.
        
@@ -194,12 +177,12 @@ You should get an output similar to what has been shown in image below.
 ![](assets/java_setup_win/19java-verify.png)
 
 ## On Linux
-Different Linux distros uses different package managers to install software. If you are familiar with installing software on your Linux machine, you can use inbuilt package manager for installation. After installing Java, you can proceed to verifying Java section and verify if Java is correctely installed.
+Different Linux distros uses different package managers to install software. If you are familiar with installing software on your Linux machine, you can use inbuilt package manager for installation. After installing Java, you can proceed to verifying Java section and verify if Java is correctly installed.
 
 For a more generic experience and to avoid permission issues, we will follow steps to setup Java manually.
 
 Below steps can be used to setup OpenJDK 19 (latest stable GA version) on your Linux PC.
-### Downloaing Java
+### Downloading Java
 
 1.	Open https://jdk.java.net/19/ in your web browser.
 
@@ -395,7 +378,7 @@ Steps to get PostgresDB installed locally
 Possibly prerecorded videos. Need offline support
 
 # Git and GitHub
-### On windows
+
 ## On Windows
 1. Go to download page using the following link
 
@@ -421,7 +404,7 @@ Possibly prerecorded videos. Need offline support
     1. First, configure your username and email since every git commit uses this information, type the following commands in terminal
 
                 git config --global user.name "Vijaysai"
-                git config --gloabl user.email "vijaysai@example.com"
+                git config --global user.email "vijaysai@example.com"
     2. To verify if your username and email were properly set use the following command
     
         ```git config user.name``` 
@@ -433,6 +416,43 @@ Possibly prerecorded videos. Need offline support
        
        ```git clone https://github.com/koushikkothagal/java-backend-bootcamp.git```
     
+
+## On Linux
+
+Linux comes with git pre-installed, you can check the version of git by typing the following command in terminal
+
+```console
+$ git --version
+git version 2.37.1
+```
+
+If that's not the case, follow the steps below to install git
+
+1. Open terminal and type the following command to update the package list
+
+```console
+sudo apt-get update
+```
+2. Type the following command to install git
+```console
+sudo apt-get install git
+```
+![git installing](./assets/git-linux-setup/installing-git.png)
+
+3. After the installation is complete, set up your username and email by typing the following commands in terminal
+
+
+```console
+git config --global user.name "yourUserName"
+
+git config --global user.email "youremail@example.com"
+```
+
+4. Now you are ready to clone the repository, type the following command in terminal
+
+```console
+git clone https://github.com/koushikkothagal/java-backend-bootcamp.git
+```
 
 # Setting up IntelliJ
 ## On MacOS

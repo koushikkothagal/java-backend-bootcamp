@@ -1,4 +1,6 @@
 # Student notes repos (Add yours here)
-- URL1
-- URL2
 - https://github.com/SaiPavanN01/javabrains-bootcamp-notes
+- https://github.com/Shikhar2562/javabrains-bootcamp-notes
+- [Ryan's Notes for Session 2](https://github.com/ryanohcodes/javabrains-bootcamp-notes)
+- https://github.com/bhargavbondiga/javabrains-bootcamp-notes
+- https://github.com/imohitsaxena/javabrains-bootcamp-notes

@@ -7,3 +7,4 @@
 - [Ryan's Notes for Session 2](https://github.com/ryanohcodes/javabrains-bootcamp-notes)
 - https://github.com/bhargavbondiga/javabrains-bootcamp-notes
 - https://github.com/imohitsaxena/javabrains-bootcamp-notes
+- https://github.com/weyra-tech/-Atirsaw-javabrains-bootcamp-notes

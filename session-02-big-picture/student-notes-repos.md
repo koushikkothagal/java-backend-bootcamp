@@ -1,3 +1,15 @@
 # Student notes repos (Add yours here)
-- https://github.com/KetanKBaboo/Javabrain-bootcamp/blob/main/README.md
-- URL2
+- https://github.com/Vishwarup99/Java-Bootcamp
+- [Kashish- Bootcamp Session 2 Notes](https://github.com/K-ash-ish/bootcamp-notes)
+- https://github.com/samalprasant123/java-bootcamp-notes
+- https://github.com/SaiPavanN01/javabrains-bootcamp-notes
+- https://github.com/Shikhar2562/javabrains-bootcamp-notes
+- [Ryan's Notes for Session 2](https://github.com/ryanohcodes/javabrains-bootcamp-notes)
+- https://github.com/bhargavbondiga/javabrains-bootcamp-notes
+- https://github.com/imohitsaxena/javabrains-bootcamp-notes
+- https://github.com/weyra-tech/-Atirsaw-javabrains-bootcamp-notes
+- https://github.com/saksham-rastogi/javabrains-bootcamp-notes
+- https://github.com/Bangosushi/javabrains-bootcamp-notes
+- https://github.com/Sngpt/javabrains-bootcamp-notes
+- https://github.com/nikhgupt/javabrains-bootcamp-notes
+- https://github.com/KetanKBaboo/Javabrain-bootcamp

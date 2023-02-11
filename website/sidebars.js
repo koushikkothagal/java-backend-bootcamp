@@ -30,8 +30,10 @@ const sidebars = {
         'java-backend-bootcamp/java-basics/java-operators',
         'java-backend-bootcamp/java-basics/arrays',
         'java-backend-bootcamp/java-basics/classes',
+        'java-backend-bootcamp/java-basics/static',
         'java-backend-bootcamp/java-basics/inheritance',
         'java-backend-bootcamp/java-basics/nested-and-inner-classes',
+        'java-backend-bootcamp/java-basics/records',
       ],
     },
     {
@@ -68,6 +70,27 @@ const sidebars = {
         'java-backend-bootcamp/lambdas-and-streams/best-practices',
         'java-backend-bootcamp/lambdas-and-streams/advanced-concepts',
         'java-backend-bootcamp/lambdas-and-streams/java-streams',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Apache Maven',
+      link: {
+        type: 'generated-index',
+        title: 'Apache Maven',
+        slug: '/maven'
+      },
+      items: [
+        'java-backend-bootcamp/maven/introduction',
+        'java-backend-bootcamp/maven/the-maven-project',
+        'java-backend-bootcamp/maven/project-object-model',
+        'java-backend-bootcamp/maven/dependency-management',
+        'java-backend-bootcamp/maven/versioning-convention',
+        'java-backend-bootcamp/maven/plugins',
+        'java-backend-bootcamp/maven/maven-goals',
+        'java-backend-bootcamp/maven/build-lifecycle',
+        'java-backend-bootcamp/maven/repositories',
+        'java-backend-bootcamp/maven/profiles',
       ],
     },
   ]

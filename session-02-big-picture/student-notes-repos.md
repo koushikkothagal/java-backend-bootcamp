@@ -21,4 +21,4 @@
 - https://github.com/Raj04/Spring-Bootcamp
 - https://github.com/shawchandankumar/Java-Backend-Development
 - https://github.com/bogdanbilcan/JavaBrains-BootCampNotes
-- [Karthik BootCamp Notes for Session 2](https://github.com/karthikManne/javabrains-bootcamp-notes/blob/main/session-02/README.md)
+- [Karthik BootCamp Notes for Session 2](https://github.com/karthikManne/javabrains-bootcamp-notes/blob/main/session-02)

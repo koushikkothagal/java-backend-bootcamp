@@ -1,9 +1,12 @@
 package io.javabrains.javabasics;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Operators {
     public static void main(String[] args) {
         // Step 1: Declare variables
-
+        ArrayList
 
         // Step 2: Perform arithmetic operations
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="session-03-java-basics/java-basics-exercises/src/main/java"/>
+	<classpathentry kind="src" path="session-04-java-collections/java-collections-exercises/src/main/java"/>
+	<classpathentry kind="lib" path="session-03-java-basics/java-basics-exercises/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="output" path="session-04-java-collections/java-collections-exercises/target/classes"/>
+</classpath>

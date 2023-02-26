@@ -1,5 +1,7 @@
 package io.javabrains.javabasics;
 
+import java.util.Objects;
+
 public class InstanceOf {
 
     public static void main(String[] args) {
@@ -12,6 +14,9 @@ public class InstanceOf {
         };
 
         // Challenge: Use instanceof to determine the type of each object in the array
+        for( Object i: objects ){
+            System.out.println(i.getClass());
+        }
 
     }
 }

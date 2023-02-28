@@ -5,11 +5,11 @@ public class JavaVariables {
     public static void main(String[] args) {
         // Step 1: Declare and initialize variables of different data types
         // int variable to store an integer value
-
+         int a=10;
         // long variable to store a long value
-
+         long l=10;
         // float variable to store a floating-point value
-
+        float f=2.5;
 
         // double variable to store a double value
 

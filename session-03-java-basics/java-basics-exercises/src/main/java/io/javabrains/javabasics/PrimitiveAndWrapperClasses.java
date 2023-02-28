@@ -1,4 +1,4 @@
-package io.javabrains.javabasics;
+import java.lang.*;;
 
 public class PrimitiveAndWrapperClasses {
     public static void main(String[] args) {

@@ -15,6 +15,11 @@ package io.javabrains.javabasics;
 public class InheritanceChallenge {
 
     public static void main(String[] args) {
+      Animal[] animals=new Animal[4];
+      animals[0]=new Lion('Simba',2);
+      animals[1]=new Dog('Puppy',3);
+      animals[0]=new Cat('Kitty',2);
+      animals[0]=new Cow('Pearl',2);
 
     }
 }

@@ -53,7 +53,7 @@ class Car {
         return year + " " + make + " " + model;
     }
 }
-public class Main{
+public class ClassesAndObjects {
     public static void main(String[] args) {
         Car car=new Car("Lamborghini", "Gallardo", 2013);
         System.out.println("Make: " +car.getMake());

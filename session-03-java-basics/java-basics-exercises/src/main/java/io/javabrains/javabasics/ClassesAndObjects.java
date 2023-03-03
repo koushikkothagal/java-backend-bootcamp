@@ -18,10 +18,47 @@ Details: 2020 Toyota Camry
 
  */
 
-public class ClassesAndObjects {
+ /******************************************************************************
 
-    public static void main(String[] args) {
-     
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+class Car {
+    private String make;
+    private String model;
+    private int year;
+
+    public Car(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public String toString() {
+        return year + " " + make + " " + model;
     }
 }
-
+public class Main{
+    public static void main(String[] args) {
+        Car car=new Car("Lamborghini", "Gallardo", 2013);
+        System.out.println("Make: " +car.getMake());
+        System.out.println("Model: " +car.getModel());
+        System.out.println("Year: " + car.getYear());
+        System.out.println("Details: " +car.toString());
+    }
+}

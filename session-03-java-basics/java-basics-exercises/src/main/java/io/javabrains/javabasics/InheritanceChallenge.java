@@ -72,7 +72,7 @@ class Cow extends Animal{
     System.out.println("Cow moos");
   }
 }
-public class Main {
+public class InheritanceChallenge {
     public static void main(String[] args) {
       Animal[] animals=new Animal[4];
       animals[0]=new Lion("Simba",2,"AfricanLion");

@@ -11,8 +11,7 @@ Create a class `Rectangle` with the following attributes: `width`, `height`, and
  */
 
 public class StaticChallenge {
-
     public static void main(String[] args) {
-
+  
     }
 }

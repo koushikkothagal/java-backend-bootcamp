@@ -1,7 +1,6 @@
 package io.javabrains.javabasics;
 
 public class JavaVariables {
-
     public static void main(String[] args) {
         // Step 1: Declare and initialize variables of different data types
         // int variable to store an integer value

@@ -14,7 +14,6 @@ The program should display a menu of options, and the user should be able to sel
 The program should continue to display the menu and allow the user to perform operations until they choose to quit.
 */
 
-public class ListHomework {
-
+public class ListHomework1 {
 
 }

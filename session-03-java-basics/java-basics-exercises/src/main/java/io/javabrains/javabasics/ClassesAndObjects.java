@@ -1,5 +1,61 @@
 package io.javabrains.javabasics;
 
+class Car{
+    String make;
+    String model;
+    String year;
+
+    public String make() {
+        return make;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public String model() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String year() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
+
+    public String details() {
+        return details;
+    }
+
+    public void setDetails(String details) {
+        this.details = details;
+    }
+
+    public Car(String make, String model, String year, String details) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.details = details;
+    }
+
+    String details;
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", year='" + year + '\'' +
+                ", details='" + details + '\'' +
+                '}';
+    }
+}
 /*
 1.  Create a class called `Car` with member variables for the make, model, and year of the car.
 2.  Create a constructor method for the `Car` class that initializes the member variables.
@@ -21,6 +77,7 @@ Details: 2020 Toyota Camry
 public class ClassesAndObjects {
 
     public static void main(String[] args) {
-
+        Car car=new Car("Toyota","Camry","2023","2023 Toyota Camry");
+        System.out.println(car);
     }
 }

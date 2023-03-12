@@ -12,6 +12,8 @@ public class InstanceOf {
         };
 
         // Challenge: Use instanceof to determine the type of each object in the array
-
+        for( Object i: objects ){
+            System.out.println(i.getClass());
+        }
     }
 }

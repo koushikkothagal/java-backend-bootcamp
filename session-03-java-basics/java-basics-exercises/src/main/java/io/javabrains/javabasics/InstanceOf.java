@@ -12,6 +12,25 @@ public class InstanceOf {
         };
 
         // Challenge: Use instanceof to determine the type of each object in the array
-
+        for (Object obj : objects) {
+            String objectType = determineObjectType(obj);
+            System.out.println(obj + " is of type " + objectType + ".");
+        }
     }
+
+    private static String determineObjectType(Object obj) {
+        if (obj instanceof Integer) {
+            return "Integer";
+        } else if (obj instanceof String) {
+            return "String";
+        } else if (obj instanceof Boolean) {
+            return "Boolean";
+        } else if(obj instanceof Double){
+            return "Double";
+        }
+        return "undetermined";
+    }
+
+
+
 }

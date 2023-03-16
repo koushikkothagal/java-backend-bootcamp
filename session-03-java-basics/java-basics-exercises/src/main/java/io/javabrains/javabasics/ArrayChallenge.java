@@ -8,10 +8,10 @@ public class ArrayChallenge {
         double average;
         int largest=numbers[0];
         // Step 2: Use arrays and array operations to find the sum, average, and largest number in the array
-        for(int i=0;i<numbers.length;i++){
-            sum+=numbers[i];
-            if(numbers[i]>largest){
-                largest=numbers[i];
+        for (int number : numbers) {
+            sum += number;
+            if (number > largest) {
+                largest = number;
             }
         }
         average=(double)sum/numbers.length;

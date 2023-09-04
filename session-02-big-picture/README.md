@@ -1,4 +1,4 @@
-# The goal
+# The goals
 TODO
 Overview of what we'll be learning but from the perspective of the final objective. 
 What do you want to be able to do after the bootcamp ends?

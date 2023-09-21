@@ -40,6 +40,6 @@ public class JavaVariables {
         System.out.println(weight);
         System.out.println(alpha);
         System.out.println(someBool);
-        System.out.println(name);
+        System.out.println();
     }
 }

@@ -8,7 +8,7 @@ The Collection framework is also different from traditional arrays in Java. Trad
 
 The main interfaces provided by the Collection framework are `List`, `Set`, and `Map`, each with their own unique properties. The `List` interface is used to represent a collection of elements in which the elements are ordered and can be accessed by their position. `Set` is used to represent a collection of elements in which the elements are unique and can't be repeated. `Map` is used to represent a collection of elements in which the elements are key-value pairs.
 
-The `Collection` interface is the root interface in the collection hierarchy. It defines the basic operations that can be performed on a collection, such as adding and removing elements. The `List`, `Set`, and `Map` interfaces all extend the `Collection` interface and provide additional methods specific to their type of collection.
+The `Collection` interface is the root interface in the collection hierarchy. It defines the basic operations that can be performed on a collection, such as adding and removing elements. The `List`, `Set`interfaces all extend the `Collection` interface and provide additional methods specific to their type of collection.
 
 Here's an example of how you can use the Collection framework to create a list of integers:
 

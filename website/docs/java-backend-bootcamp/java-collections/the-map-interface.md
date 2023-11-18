@@ -119,7 +119,7 @@ public class Main {
 
         // Iterate through the map and print the key-value pairs
         for (Map.Entry<String, Integer> entry : myMap.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getEntry.getValue());
+            System.out.println(entry.getKey() + ": " + entry.getValue());
 		}
 	}
 }

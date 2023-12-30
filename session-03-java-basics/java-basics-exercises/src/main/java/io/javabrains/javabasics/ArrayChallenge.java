@@ -7,6 +7,6 @@ public class ArrayChallenge {
 
         // Step 2: Use arrays and array operations to find the sum, average, and largest number in the array
 
-
+        //Nothing has changed just for testing pull request workflow
     }
 }

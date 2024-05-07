@@ -12,9 +12,52 @@ package io.javabrains.javabasics;
  */
 
 
+class  Animal{
+     String name;
+     int age;
+    Animal(String name,int age){
+        this.name = name;
+        this.age = age;
+    }
+
+    public String makeSound(){
+        return "make sound";
+    }
+}
+class Dog extends Animal{
+    String breed;
+    Dog(String name, int age, String breed) {
+        super(name, age);
+        this.breed = breed;
+    }
+
+    @Override
+    public String makeSound(){
+        return "The Dog Barks";
+    }
+}
+
+class Cat extends Animal{
+    int lives;
+    Cat(String name, int age,int lives) {
+        super(name, age);
+        this.lives = lives;
+    }
+    @Override
+    public String makeSound(){
+        return "The Cat Meows";
+    }
+}
 public class InheritanceChallenge {
 
     public static void main(String[] args) {
+        Animal cat = new Cat("Cat",2,5);
+        Animal dog = new Dog("Scooby",3,"labora");
+        Animal lion = new Animal("lion",3);
 
+        Animal[] animals = {cat,dog,lion};
+        for (Animal animal: animals){
+            System.out.println(animal.name + " " + animal.age + " " + animal.makeSound());
+        }
     }
 }

@@ -3,34 +3,35 @@ package io.javabrains.javacollections;
 import java.util.Collection;
 import java.util.Set;
 import java.util.SortedSet;
+import java.util.TreeSet;
 
 // Implement the VocabularyWordManager using a SortedSet internally
 
 public class VocabularyWordManager {
 
+    private SortedSet<String> words;
     public VocabularyWordManager(Collection<String> words) {
-        throw new RuntimeException("Not implemented");
+        this.words = new TreeSet<>(words);
     }
 
     public String getFirstWord() {
-        throw new RuntimeException("Not implemented");
+        return  this.words.first();
     }
 
     public String getLastWord() {
-        throw new RuntimeException("Not implemented");
-
+        return this.words.last();
     }
 
     public SortedSet<String> getWordsBefore(String word) {
-        throw new RuntimeException("Not implemented");
+        return this.words.headSet(word);
     }
 
     public SortedSet<String> getWordsAfter(String word) {
-        throw new RuntimeException("Not implemented");
+        return this.words.tailSet(word);
     }
 
     public SortedSet<String> getWordsBetween(String startWord, String endWord) {
-        throw new RuntimeException("Not implemented");
+        return  this.words.subSet(startWord,endWord);
     }
 
     public static void main(String[] args) {

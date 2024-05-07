@@ -10,9 +10,39 @@ Create a class `Rectangle` with the following attributes: `width`, `height`, and
 5.  In this main method, create several `Rectangle` objects, calculate and print their area and perimeter, and finally print the number of rectangles created without keeping count in this class.
  */
 
+class Rectangle{
+    int width;
+    int height;
+    static int noOfRectangles=0;
+
+    Rectangle(int width,int height){
+        this.width=width;
+        this.height=height;
+        noOfRectangles++;
+    }
+    public int getArea(){
+        return this.width*this.height;
+    }
+    public int getPerimeter(){
+        return 2*(this.width+this.height);
+    }
+    static int getNoOfRectangles(){
+        return  noOfRectangles;
+    }
+}
 public class StaticChallenge {
 
     public static void main(String[] args) {
+        Rectangle rect1 = new Rectangle(10,20);
+        Rectangle rect2 = new Rectangle(30,20);
+
+        System.out.println("rect1.getArea() = " + rect1.getArea());
+        System.out.println("rect1.getPerimeter() = " + rect1.getPerimeter());
+
+        System.out.println("rect2.getArea() = " + rect2.getArea());
+        System.out.println("rect2.getPerimeter() = " + rect2.getPerimeter());
+
+        System.out.println(Rectangle.getNoOfRectangles());
 
     }
 }

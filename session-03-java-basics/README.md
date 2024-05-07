@@ -3,6 +3,29 @@
 ## Contents
 ### Basic Syntax: 
 Explains the basic syntax of the Java programming language, including how to declare variables, use control structures, and perform input/output operations.
+
+public class Main {
+    public static void main(String[] args){
+      //variable declaration
+        int i =0;
+        String s = "str"; 
+
+        if(i==0) {
+             System.out.println(i)
+        }
+    }
+}
+There are two types of variable declaration in java
+    1) Primitives : These are immutable.
+                        1. int
+                        2. double
+                        3. float
+                        4. long
+                        5. boolean
+                        6. short
+                        7. byte
+                        8. chat
+
 ### Data Types: 
 Explains the different data types in Java, including primitive types (such as int, double, and boolean) and non-primitive types (such as Strings).
 ### Operators: 

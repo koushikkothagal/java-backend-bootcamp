@@ -370,6 +370,11 @@ Run the below commands to check to Java is correctly set.
       javac 19.0.2
       ```
 
+## Setting up Java using sdkman
+   - Install sdkman goto: [sdkman.io](https://sdkman.io/install) and follow the setps as per your OS
+   - Installing java see here: [https://sdkman.io/usage](https://sdkman.io/usage)
+
+
 # Setting up a relational DB (PostgresDB)
 TODO
 Steps to get PostgresDB installed locally

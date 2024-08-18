@@ -12,9 +12,21 @@ package io.javabrains.javabasics;
  */
 
 
+import java.util.ArrayList;
+
 public class InheritanceChallenge {
 
     public static void main(String[] args) {
+        ArrayList<Animal> list = new ArrayList<Animal>();
+        list.add(new Dog("Dobermann", "KillerT", 1));
+        list.add(new Cat(3, "Hairball", 7));
+        list.add(new Cat(8, "Lian Kin", 7));
+        list.add(new Dog("Wolf dog", "Wolfie", 3));
+
+        for(Animal animal : list){
+            animal.makeSound();
+            animal.display();
+        }
 
     }
 }

@@ -22,5 +22,10 @@ public class ClassesAndObjects {
 
     public static void main(String[] args) {
 
+        Car newCar = new Car("Toyota", "GR Yaris" , 2023 );
+        System.out.println("Make:"+ newCar.getMake());
+        System.out.println("Model:"+ newCar.getModel());
+        System.out.println("Year:"+ newCar.getYear());
+        System.out.println(newCar);
     }
 }

@@ -14,7 +14,7 @@ The browser then renders the HTML and displays the web page to the user. The use
 
 ## Application architecture
 
-The three-tier architecture is a software design pattern commonly used in the development of web applications. It is comprised of three distinct layers: the presentation layer, the application logic layer, and the data layer.
+The three-tier architecture is a software design pattern commonly used in the development of web applications. It comprises three distinct layers: the presentation layer, the application logic layer, and the data layer.
 
 The presentation layer is the user interface, which is the part of the application that the user interacts with. This layer is responsible for the look and feel of the application, and is typically implemented using HTML, CSS, and JavaScript. It communicates with the application logic layer to receive data and present it to the user.
 
@@ -58,7 +58,7 @@ In this bootcamp, we will focus on the most popular protocol used for this today
 
 Final project options:
 
-- A RESTful API (Application Programming Interface) for a e-commerce website that allows users to view products, add items to a shopping cart, and place orders
+- A RESTful API (Application Programming Interface) for an e-commerce website that allows users to view products, add items to a shopping cart, and place orders
 
 - A social media platform that allows users to create profiles, post updates, and connect with friends
 
@@ -66,7 +66,7 @@ Final project options:
 
 - A blog / Content Management System that allows organizations to manage and distribute content through website or application, consisting of a "public" set of APIs for viewing and navigating blog and a "private" set of APIs for managing content
 
-- A job portal that allows job seekers and recruiters to connect, search and apply for jobs, the backend would handle user management, job posting, and resume management 
+- A job portal that allows job-seekers and recruiters to connect, search and apply for jobs, the backend would handle user management, job posting, and resume management 
 
 
 # Where we'll be building
@@ -79,7 +79,7 @@ Explain dev workflow
 
 # Setting up Java
 ## On Windows
-Below steps can be used to setup OpenJDK 19 (latest stable GA version) on your Windows PC.
+Below steps can be used to set up OpenJDK 19 (latest stable GA version) on your Windows PC.
 ### Downloading Java
 1.	Open https://jdk.java.net/19/ in your web browser.
 2.	Click in ‘zip’ hyperlink against Windows/ x64 as highlighted in image below:
@@ -96,9 +96,9 @@ Absolute path in image above will be “C:\openjdk\jdk-19.0.2”. If your folder
 
 Java should be set in PATH variable so that it is available to all the programs easily without needing the absolute path of java program.
 
-JAVA_HOME variable is used by many java programs and it is advised to setup same.
+JAVA_HOME variable is used by many java programs, and it is advised to set up same.
 
-Steps to setup:
+Steps to set up:
 
 1.	Press Windows + r key to open ‘Run’ window and type in sysdm.cpl.
 
@@ -116,7 +116,7 @@ Steps to setup:
 
 ![](assets/java_setup_win/10env-var.png)
 
-5.	This will open a window that will allow you to setup system variable.
+5.	This will open a window that will allow you to set up system variable.
 
 ![](assets/java_setup_win/11new-var.png)
 
@@ -179,9 +179,9 @@ You should get an output similar to what has been shown in image below.
 ## On Linux
 Different Linux distros uses different package managers to install software. If you are familiar with installing software on your Linux machine, you can use inbuilt package manager for installation. After installing Java, you can proceed to verifying Java section and verify if Java is correctly installed.
 
-For a more generic experience and to avoid permission issues, we will follow steps to setup Java manually.
+For a more generic experience and to avoid permission issues, we will follow steps to set up Java manually.
 
-Below steps can be used to setup OpenJDK 19 (latest stable GA version) on your Linux PC.
+Below steps can be used to set up OpenJDK 19 (latest stable GA version) on your Linux PC.
 ### Downloading Java
 
 1.	Open https://jdk.java.net/19/ in your web browser.
@@ -278,7 +278,7 @@ Run the below commands to check to Java is correctly set.
 
 2. Click on the "tar.gz" file appropriate for your processor. 
 
-   Intel processor: Click on "tar.gz" to the right of "macOs/x64".
+   Intel processor: Click on "tar.gz" to the right of "macOS/x64".
    
    Apple Silicon processor: Click on "tar.gz" to the right of "macOS/AArch64". 
 

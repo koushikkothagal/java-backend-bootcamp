@@ -21,3 +21,4 @@
 - https://github.com/Raj04/Spring-Bootcamp
 - https://github.com/shawchandankumar/Java-Backend-Development
 - https://github.com/bogdanbilcan/JavaBrains-BootCampNotes
+- [Aravinth's 'The big picture' notes](https://github.com/aravinthmra/javabrains-backend-bootcamp/blob/main/Notes/The_big_picture.md)

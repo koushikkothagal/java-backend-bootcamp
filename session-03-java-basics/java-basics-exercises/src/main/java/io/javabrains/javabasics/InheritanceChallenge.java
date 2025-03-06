@@ -13,8 +13,64 @@ package io.javabrains.javabasics;
 
 
 public class InheritanceChallenge {
-
+    static class Animal {
+        String name;
+        int age;
+        Animal(String name, int age) {
+            this.name=name;
+            this.age=age;
+        }
+        void makeSound() {
+            System.out.println("Animals make sounds");
+        }
+    }
+    static class Dog extends Animal {
+        String breed;
+        Dog(String name, int age, String breed) {
+            super(name, age);
+            this.breed=breed;
+        }
+        @Override
+        void makeSound() {
+            System.out.println("Dog barks");
+        }
+    }
+    static class Cat extends Animal {
+        int noOfLives;
+        Cat(String name, int age, int noOfLives)
+        {
+            super(name, age);
+            this.noOfLives = noOfLives;
+        }
+        @Override
+        void makeSound() {
+            System.out.println("The Cat meows");
+        }
+    }
+    static class Lion extends Animal {
+        int noOfKills;
+        Lion(String name, int age, int noOfKills)
+        {
+            super(name, age);
+            this.noOfKills = noOfKills;
+        }
+        @Override
+        void makeSound() {
+            System.out.println("The Lion roars");
+        }
+    }
     public static void main(String[] args) {
+        Animal dog = new Dog("puppy", 12, "dabberman");
+        Animal cat = new Cat("catty", 10, 15);
+        Animal lion = new Lion("liony", 50, 100);
+
+        Animal[] animals = {dog, cat, lion};
+        for(Animal animal : animals)
+        {
+            System.out.println(animal.name);
+            System.out.println(animal.age);
+            animal.makeSound();
+        }
 
     }
 }

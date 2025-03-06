@@ -6,7 +6,17 @@ Create an anonymous inner class implementation of `Animal2` and then call the `m
  */
 
 public class AnonymousInnerClasses {
+    abstract static class Animal2 {
+        abstract void makeSound();
+    }
     public static void main(String[] args) {
+        Animal2 obj = new Animal2() {
+            @Override
+            void makeSound() {
+                System.out.println("Animals make sounds");
+            }
+        };
+        obj.makeSound();
 
     }
 }

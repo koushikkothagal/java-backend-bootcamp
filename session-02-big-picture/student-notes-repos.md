@@ -14,6 +14,7 @@
 - https://github.com/nikhgupt/javabrains-bootcamp-notes
 - https://github.com/KetanKBaboo/Javabrain-bootcamp
 - https://github.com/iiliev123/java-brains-bootcamp
+- https://github.com/SleepoCrow/JavaBootcampNotes
 - https://github.com/somixyz/Koushik-SE-bootcamp
 - https://github.com/saurabh220490/java-backend-bootcamp
 - https://github.com/vijaysaiy/backend-engineering

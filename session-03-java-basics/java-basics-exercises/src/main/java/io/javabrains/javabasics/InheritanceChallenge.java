@@ -15,6 +15,61 @@ package io.javabrains.javabasics;
 public class InheritanceChallenge {
 
     public static void main(String[] args) {
+        class Animal{
+            private String name;
+            private int age;
 
+            public Animal(String name, int age){
+                this.name = name;
+                this.age = age;
+            }
+
+            public void makeSound(){
+                System.out.println("Generic sound");
+            }
+
+            @Override
+            public String toString(){
+                return String.format("Name: %s \nAge: %d", name, age);
+            }
+        }
+
+        class Dog extends Animal{
+            private String breed;
+
+            public Dog(String name, int age, String breed){
+                super(name,age);
+                this.breed = breed;
+            }
+
+            @Override
+            public void makeSound(){
+                System.out.println("The dog barks");
+            }
+
+        }
+
+        class Cat extends Animal{
+            private int lives;
+
+            public Cat(String name, int age, int lives){
+                super(name,age);
+                this.lives = lives;
+            }
+
+            @Override
+            public void makeSound(){
+                System.out.println("The cat meows");
+            }
+
+        }
+
+        Animal[] zoo = {new Animal("King Leo",12), new Dog("Spot", 5, "Dalmation"),
+                new Cat("Whiskers", 8, 9)};
+
+        for (Animal a : zoo){
+            System.out.println(a.toString());
+            a.makeSound();
+        }
     }
 }

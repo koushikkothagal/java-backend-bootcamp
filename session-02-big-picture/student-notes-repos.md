@@ -21,3 +21,4 @@
 - https://github.com/Raj04/Spring-Bootcamp
 - https://github.com/shawchandankumar/Java-Backend-Development
 - https://github.com/bogdanbilcan/JavaBrains-BootCampNotes
+- [Tajudeen's Notes](https://github.com/taj-codes/javabrains-bootcamp-notes)
